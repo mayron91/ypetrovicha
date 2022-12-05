@@ -1,4 +1,29 @@
-.header {
-    border: 1px solid;
-    padding: 15px 0;
+.container {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 30px;
+}
+.header_logo {
+    flex-grow: 2;
+}
+.header_item {
+    display: inline-flex;
+    align-items: center;
+}
+.header__flag::before {
+    content: url("../img/flag.svg");
+    margin: 10px 5px 0 0;
+}
+.header__time::before {
+    content: url("../img/watch.svg");
+    margin: 0 5px 0 0;
+}
+.header__mail::before {
+    content: url("../img/mail.svg");
+    margin: 0 5px 0 0;
+}
+.header__phone::before {
+    content: url("../img/phone.svg");
+    margin: 0 5px 0 0;
 }

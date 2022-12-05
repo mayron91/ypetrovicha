@@ -1,12 +1,14 @@
 <header class="header">
     <div class="container">
-        <a href="/" class="logo">
-            <img src="img/logo.svg" alt="" class="logo__img">
+        <div class="header_logo">
+            <a href="/" class="logo">
+            <img src="img/logo.png" alt="" class="logo__img">
         </a>
-
-        <div class="header__contacts">
-            <a href="tel:{{ vars.phone | toTel }}" class="phone">{{ vars.phone }}</a> <br>
-            <a href="tel:" class="phone">{{ vars.email }}</a>
         </div>
+        <div class="header_item header__flag"><address>{{ vars.address }}</address></div>
+            <div class="header_item header__time">Пн-Пт: 08:00 - 19:00, Сб: 08:00 - 17:00, Вс: выходной</div>
+            <div class="header_item header__mail"><a href="tel:" class="phone">{{ vars.email }}</a></div>
+            
     </div>
+    <div class="header_item header__phone"><a href="tel:{{ vars.phone | toTel }}" class="phone">{{ vars.phone }}</a> </div>
 </header>
