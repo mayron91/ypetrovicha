@@ -1,19 +1,27 @@
-.container {
+.header {
+    width: 90.625rem;
+    margin: 0 auto;
+}
+.header__top__item {
     display: inline-flex;
     justify-content: space-between;
-    margin-top: 10px;
     gap: 30px;
 }
 .header_logo {
     flex-grow: 2;
+    margin: 0.625rem;
+}
+.logo__img {
+    width: 85%;
 }
 .header_item {
     display: inline-flex;
-    align-items: center;
+    font-size: 0.75rem;
+    margin: 0.625rem 0 0 2.5rem;
 }
 .header__flag::before {
     content: url("../img/flag.svg");
-    margin: 10px 5px 0 0;
+    margin: 0 5px 0 0;
 }
 .header__time::before {
     content: url("../img/watch.svg");
@@ -23,7 +31,51 @@
     content: url("../img/mail.svg");
     margin: 0 5px 0 0;
 }
-.header__phone::before {
+.header__nav {
+    margin: 1px;
+    
+}
+.header__nav ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.header__nav li {
+    padding:5px 10px;
+    font-size: 0.90rem;
+    text-align: center;
+    flex-basis: auto;
+    flex-grow: 1;
+    margin-right: 4rem;
+}
+.header__nav li:hover, li:active {
+    border: solid 1px #003D9E;
+    border-radius: 5px;
+}
+.phone {
+    font-size: 1.5rem;
+    flex-basis: auto;
+    flex-grow: 1;
+    margin-right: 1.25rem;
+    vertical-align: middle;
+    font-weight: bold;
+}
+.phone__img {
+    padding: 3px 5px 0 0;
+}
+.phone::before {
     content: url("../img/phone.svg");
     margin: 0 5px 0 0;
+}
+.header__nav__btn {
+    border: 1px solid #35393F;
+    border-radius: 3px;
+    background-color: #fff;
+    width: 180px;
+    height: 35px;
+    flex-basis: auto;
+    flex-grow: 1;
+    text-align: center;
+    padding: 7px 0;
 }

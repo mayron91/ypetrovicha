@@ -1,14 +1,26 @@
 <header class="header">
-    <div class="container">
+    <div class="container header__top__item">
         <div class="header_logo">
             <a href="/" class="logo">
-            <img src="img/logo.png" alt="" class="logo__img">
+            <img src="img/logo.jpg" alt="" class="logo__img">
         </a>
         </div>
         <div class="header_item header__flag"><address>{{ vars.address }}</address></div>
             <div class="header_item header__time">Пн-Пт: 08:00 - 19:00, Сб: 08:00 - 17:00, Вс: выходной</div>
-            <div class="header_item header__mail"><a href="tel:" class="phone">{{ vars.email }}</a></div>
+            <div class="header_item header__mail"><a href="tel:" class="mail">{{ vars.email }}</a></div>
             
     </div>
-    <div class="header_item header__phone"><a href="tel:{{ vars.phone | toTel }}" class="phone">{{ vars.phone }}</a> </div>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="#">Услуги</li>
+                <li><a href="#">Запчасти</a></li>
+                <li><a href="#">Юридическим лицам</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Работа у нас</a></li>
+                <a href="tel:{{ vars.phone | toTel }}" class="phone">{{ vars.phone }}</a>
+                <a href="#" class="header__nav__btn">Обратный звонок</a>
+            </ul>
+        </nav>
+    
+    
 </header>
