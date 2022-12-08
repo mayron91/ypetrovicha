@@ -44,7 +44,6 @@ html, body {
 
 .container {
     width: 100%;
-    padding: 0 40px;
     margin: 0 auto;
     transition: $base-transition;
     @include respond-to('medium') {
