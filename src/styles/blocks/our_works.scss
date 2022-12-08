@@ -1,0 +1,35 @@
+.container_sec {
+width: 80%;
+margin: 0 10%;
+}
+
+.cont {
+    margin: 35px 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.h2 {
+    margin-left: 30px;
+}
+
+.works_img {
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
+
+.works_img:hover {
+    background-color: green;
+    cursor: pointer;
+  }
+
+  .text {
+    display:none;
+  }
