@@ -1,6 +1,6 @@
 .container_sec {
-width: 80%;
-margin: 0 10%;
+//width: 1538px;
+margin: 0 auto;
 }
 
 .cont {
@@ -9,7 +9,7 @@ margin: 0 10%;
 
 .wrapper {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
 }
