@@ -1,10 +1,9 @@
 .header {
-    width: 80%;
-    margin: 0 10%;
-  
+    // width: 80%;
+    // margin: 0 10%;
 }
 .header__top__item {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     gap: 30px;
 }
@@ -34,21 +33,21 @@
 }
 .header__nav {
     margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
 }
 .header__nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: space-between;
+    column-gap: 65px;
 }
 .header__nav li {
     font-size: 0.90rem;
     padding: 3px 0;
-    flex-grow: 1;
     text-align: center;
-    margin-right: 100px;
 }
 .header__nav li:hover, li:active {
     border: solid 1px #003D9E;
