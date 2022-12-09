@@ -26,7 +26,10 @@
  <!-- Initialize Swiper -->
  <script>
    var swiper = new Swiper('.swiper', {
+     loop: true,
+     centeredSlides: true,
      slidesPerView: 5,
+     initialSlide: 2,
      direction: getDirection(),
      navigation: {
        nextEl: '.swiper-button-next',
@@ -42,7 +45,6 @@
    function getDirection() {
      var windowWidth = window.innerWidth;
      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-
      return direction;
    }
  </script>
