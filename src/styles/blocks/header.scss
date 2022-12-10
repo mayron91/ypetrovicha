@@ -46,12 +46,18 @@
 }
 .header__nav li {
     font-size: 0.90rem;
-    padding: 3px 0;
     text-align: center;
+    padding: 8px 16px;
 }
+
+.li_active {
+    outline: solid 1px #003D9E;
+    border-radius: 4px;
+}
+
 .header__nav li:hover, li:active {
-    border: solid 1px #003D9E;
-    border-radius: 5px;
+    outline: solid 1px #003D9E;
+    border-radius: 4px;
 }
 .phone {
     font-size: 22px;
@@ -70,6 +76,6 @@
     width: 9.35rem;
     height: 30px;
     text-align: center;
-    padding: 7px 0;
+    padding: 8px 20px;
     font-size: 14px;
 }
