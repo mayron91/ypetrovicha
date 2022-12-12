@@ -42,7 +42,7 @@ html, body {
 
 
 .container {
-    max-width: 1536px;
+    max-width: 1538px + 80px;
     margin: 0 auto;
     padding: 0 40px;
     transition: $base-transition;
@@ -64,10 +64,12 @@ html, body {
 @import './blocks/banner.scss';
 @import './blocks/services.scss';
 @import './blocks/our_works.scss';
-@import './blocks/swiper.scss';
+@import './blocks/swiper_partners.scss';
+@import './blocks/swiper_brands.scss';
+@import './blocks/swiper_licensies.scss';
 @import './blocks/accordion.scss';
-@import './blocks/service.scss';
-@import './blocks/bread.scss';
+@import './blocks/about_us_main.scss';
+@import './blocks/how_to_get.scss';
 
 .logo {
     display: block;
