@@ -35,19 +35,23 @@
     margin: 5px 0 15px 0;
     display: flex;
     justify-content: space-between;
-}
-.header__nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-flex;
-    align-items: center;
-    column-gap: 65px;
-}
-.header__nav li {
-    font-size: 0.90rem;
-    text-align: center;
-    padding: 8px 16px;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        column-gap: 65px;
+    }
+    li {
+        font-size: 0.90rem;
+        text-align: center;
+        padding: 8px 16px;
+    }
+    li:hover, li:active {
+        outline: solid 1px #003D9E;
+        border-radius: 4px;
+    }
 }
 
 .li_active {
@@ -55,10 +59,6 @@
     border-radius: 4px;
 }
 
-.header__nav li:hover, li:active {
-    outline: solid 1px #003D9E;
-    border-radius: 4px;
-}
 .phone {
     font-size: 22px;
     font-weight: bold;
