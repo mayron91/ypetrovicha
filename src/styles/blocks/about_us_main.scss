@@ -3,7 +3,7 @@
 }
 
 .about_us_inner {
-    //background-image: url(img/main_car.jpg);
+    background-image: url(img/main_car.jpg);
     display: flex;
 }
 
@@ -12,6 +12,7 @@
     opacity: 0.8;
     color: white;
     min-width: 380px;
+    max-height: 551PX;
     padding: 60px 40px;
     
     & p {

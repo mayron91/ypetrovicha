@@ -3,7 +3,6 @@
 }
 
 .how_to_get_inner {
-    //background-image: url(img/main_car.jpg);
     display: flex;
 }
 
@@ -12,10 +11,30 @@
     opacity: 0.8;
     color: white;
     min-width: 380px;
+    max-height: 426PX;
     padding: 40px 40px;
     
     & p {
-        padding: 15px 0px;
+        //padding: 5px 0px;
+        //margin-bottom: 30px 
+    }
+
+    & a {
+        color: white;
+        border: 1px solid #FFFFFF;
+        border-radius: 4px;
+        padding: 15px 15px;
+    }
+}
+
+.how_to_get_text2 {
+    color: black;
+    max-width: 380px;
+    max-height: 426PX;
+    padding: 40px 40px;
+    
+    & p {
+        padding: 5px 0px;
         margin-bottom: 30px 
     }
 
@@ -25,4 +44,16 @@
         border-radius: 4px;
         padding: 15px 15px;
     }
+}
+
+.how_to_get_img {
+}
+
+.img_how {
+    object-fit: cover;
+}
+
+.how_to_get_img_2 {
+    width:100%;
+    min-height: 426px;
 }
