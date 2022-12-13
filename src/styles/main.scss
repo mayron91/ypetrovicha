@@ -63,7 +63,8 @@ html, body {
 @import './blocks/footer.scss';
 @import './blocks/banner.scss';
 @import './blocks/services.scss';
-@import './blocks/service.scss';
+@import './blocks/service/service.scss';
+@import './blocks/service/serv_tab.scss';
 @import './blocks/our_works.scss';
 @import './blocks/swiper_partners.scss';
 @import './blocks/swiper_brands.scss';
@@ -72,6 +73,7 @@ html, body {
 @import './blocks/about_us_main.scss';
 @import './blocks/how_to_get.scss';
 @import './blocks/bread.scss';
+
 
 .logo {
     display: block;
