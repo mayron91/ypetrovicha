@@ -53,6 +53,13 @@ color: #3442C1;
     padding: 30px 20px;
     
 }
+.button-service-slider::after {
+    color: #3442C1;
+}
+.swiper {
+    background-color: #3442C1;
+    background-position: center;
+}
 
 @media (max-width: 760px) {
     .swiper-button-next {
