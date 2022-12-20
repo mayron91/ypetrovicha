@@ -1,0 +1,111 @@
+.enroll_block {
+        h2 {
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 61px;
+color: #35393F;
+    }
+}
+.enroll_block_wrapper {
+    display: flex;
+    max-height: 360px;
+    background: #FFFFFF;
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
+border-radius: 10px 0px 0px 10px;
+    form {
+        padding: 30px 30px 0 30px;
+    }
+    p {
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+    }
+    input {
+        margin: 20px 0;
+        width: 100%;
+        height: 40px;
+        background: #FFFFFF;
+border: 1px solid #EEEEEE;
+border-radius: 4px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+color: #C8C8C8;
+padding: 0 10px;
+
+    }
+    img {
+        width: 40%;
+        max-height: 360px;
+        object-fit:fill;
+    }
+}
+.enroll_connection_wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    p {
+        width: 45%;
+        height: 40px;
+        margin: 0 10px;
+    }
+  
+}
+.enroll_select {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    p {
+        width: 100%;
+        margin: 20px 10px;
+    }
+    select {
+        margin: 20px 0;
+        width: 100%;
+        height: 40px;
+        background: #FFFFFF;
+border: 1px solid #EEEEEE;
+border-radius: 4px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+color: #C8C8C8;
+    }
+    input {
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+    }
+    
+}
+.enroll_block_buttom {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    input {
+        max-width: 300px;
+        min-height: 50px;
+        align-self: center;
+        background: #003D9E;
+border-radius: 4px;
+margin: 40px 0 0 0;
+color: #fff;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+     }
+
+}
