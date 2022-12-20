@@ -1,0 +1,51 @@
+.service__benefits {
+    h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    }
+}
+.benefits__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.benefits__item {
+    flex-basis: 30%;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+        width: 30%;
+        padding: 10px 30px;
+    }
+}
+.benefits__content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    align-items: flex-start;
+    h3 {
+        width: 80%;
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+    }
+    p {
+        width: 80%;
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+    }
+}

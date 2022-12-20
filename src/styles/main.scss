@@ -62,11 +62,12 @@ html, body {
 @import './blocks/header.scss';
 @import './blocks/footer.scss';
 @import './blocks/banner.scss';
+@import './blocks/member_slider.scss';
 @import './blocks/services.scss';
 @import './blocks/service/service_banner.scss';
 @import './blocks/service/serv_tab.scss';
 @import './blocks/service/service_slider.scss';
-@import './blocks/service/service_benefits.scss';
+@import './blocks/service/benefits.scss';
 @import './blocks/our_works.scss';
 @import './blocks/swiper_partners.scss';
 @import './blocks/swiper_brands.scss';
@@ -75,7 +76,7 @@ html, body {
 @import './blocks/about_us_main.scss';
 @import './blocks/how_to_get.scss';
 @import './blocks/bread.scss';
-@import './blocks/member_slider.scss';
+
 
 
 .logo {
