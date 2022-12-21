@@ -32,22 +32,105 @@ border: 0;
 .member_card_info_main {
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 80%;
     padding: 0 20px;
     align-items: flex-start;
+    h3 {
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+padding: 0;
+color: #000000;
+margin: 10px 0;
+    }
+    h4 {
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #848484;
+margin: 10px 0;
+    }
 }
-.member_card_info_sub {
-    width: 35%;
+.member_card_info_main_wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    h3 {
+        width: 25%;
+    }
+}
+.member_page_card_line {
+    border-bottom: 1px solid #EEEEEE;
+    width: 75%;
+}
+.member_card_contacts {
     display: flex;
     flex-direction: column;
+    p {
+        width: 75%;
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
+    }
+}
+.member_card_contacts_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   p {
+    padding: 0 10px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
+margin: 10px 0;
+   }
+}
+.member_icon_phone {
+    width: 20px;
+    height: 20px;
+}
+.member_icon_mail {
+    width: 22px;
+    height: 16px;
+}
+.member_card_info_sub {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    h3 {
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+color: #000000;
+    }
+}
+.member_card_sub_img {
+    img {
+        width: 100%;
+    object-fit: cover;
+    object-position: top;
+    }
 }
 /*raiting*/
 .rating-result {
 	width: 265px;
+    margin: 10px 0;
 }
 .rating-result span {
-	padding: 0;
-	font-size: 26px;
+	font-size: 16px;
 	line-height: 1;
 	color: lightgrey;
 	text-shadow: 1px 1px #bbb;
