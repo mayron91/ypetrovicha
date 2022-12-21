@@ -1,0 +1,19 @@
+.team_page_button_wrapper {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin: 10px 0 50px 0;
+}
+.team_page_button {
+min-width: 374px;
+height: 50px;
+background: #003D9E;
+border-radius: 4px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+border: 0;
+}
