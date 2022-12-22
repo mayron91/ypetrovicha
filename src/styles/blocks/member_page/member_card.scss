@@ -33,7 +33,7 @@ border: 0;
     display: flex;
     flex-direction: column;
     width: 80%;
-    padding: 0 20px;
+    padding: 0 50px;
     align-items: flex-start;
     h3 {
         font-family: 'Roboto';
@@ -105,28 +105,41 @@ margin: 10px 0;
     height: 16px;
 }
 .member_card_info_sub {
-    width: 20%;
+    width: 15%;
     display: flex;
     flex-direction: column;
     h3 {
         font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
-font-size: 18px;
+font-size: 12px;
 line-height: 22px;
 color: #000000;
     }
 }
 .member_card_sub_img {
+    position: relative;
     img {
         width: 100%;
     object-fit: cover;
     object-position: top;
+    z-index: 0;
     }
+}
+.member_card_sub_img::before {
+    content: '';
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(255, 255,255, 0.9) 0%, rgba(0, 0, 0, 0) 50%);
+  }
+.card_info_sub_gradient {
+    z-index: 50;
 }
 /*raiting*/
 .rating-result {
-	width: 265px;
     margin: 10px 0;
 }
 .rating-result span {
@@ -140,4 +153,64 @@ color: #000000;
 }
 .rating-result > span.active {
 	color: #003D9E;
+}
+.card_info_sub_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
+border-radius: 10px;
+    p {
+        padding: 0 0 5px 0;
+        margin: 0 0 10px 0;
+    }
+    h3 {
+        padding: 0 0 5px 0;
+        margin: 0;
+    }
+}
+.member_card_sub_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    margin: 50px;
+    background: #FFFFFF;
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
+border-radius: 10px;
+h3 {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+padding: 0 30px;
+
+p {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #000000;
+}
+
+}
+}
+.member_card_study {
+    padding: 0 20px 20px 20px;
+    li {
+        color: #003D9E;
+    }
+    p {
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
+    }
 }
