@@ -58,19 +58,21 @@
     </div>
     </div>
 </footer>
+
 <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
   <!-- Initialize Swiper -->
  <script>
-    var swiper = new Swiper('.swiper', {
+var swiper1 = new Swiper('#swiper-products', {
       loop: true,
       centeredSlides: true,
       slidesPerView: 5,
       initialSlide: 2,
       direction: getDirection(),
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next-products',
+        prevEl: '.swiper-button-prev-products',
       },
       on: {
         resize: function () {
@@ -84,6 +86,56 @@
       var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
       return direction;
     }
-  </script>
+ </script>
 
+   <!-- Initialize Swiper -->
+ <script>
+var swiper2 = new Swiper('#swiper-services', {
+      loop: true,
+      centeredSlides: true,
+      slidesPerView: 5,
+      initialSlide: 2,
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.swiper-button-next-services',
+        prevEl: '.swiper-button-prev-services',
+      },
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        },
+      },
+    });
  
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+      return direction;
+    }
+ </script>
+
+    <!-- Initialize Swiper -->
+ <script>
+var swiper3 = new Swiper('#swiper-member', {
+      loop: true,
+      centeredSlides: true,
+      slidesPerView: 5,
+      initialSlide: 2,
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.swiper-button-next-member',
+        prevEl: '.swiper-button-prev-member',
+      },
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        },
+      },
+    });
+ 
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+      return direction;
+    }
+ </script>
