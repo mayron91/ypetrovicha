@@ -37,9 +37,9 @@ text-transform:uppercase;
 .statistic_about_us_item_wapper {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin: 0 10px;
+    height: 100%;
     h2 {
         font-family: 'Montserrat';
 font-style: normal;
@@ -52,9 +52,7 @@ line-height: 78px;
    margin: 20px 0 !important;
    padding: 0 !important;
     }
-    span {
-        font-size: 38px;
-    }
+    
     p {
         width: 100%;
         font-family: 'Roboto';
@@ -63,5 +61,10 @@ font-weight: 400;
 font-size: 18px;
 line-height: 21px;
 color: #000000;
+align-self:flex-end;
+    }
+    span {
+        font-size: 38px;
     }
 }
+/*slider*/
