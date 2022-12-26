@@ -19,3 +19,49 @@ text-align: left;
 text-transform:uppercase;
     }
 }
+/*statistic about us page*/
+.statistic_about_us_wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0;
+    justify-content: space-between;
+}
+.statistic_about_us_item {
+    width: 24%;
+    display: flex;
+    flex-direction: row;
+    img {
+        height: 20%;
+    }
+}
+.statistic_about_us_item_wapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 10px;
+    h2 {
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 78px;
+-webkit-text-stroke-width: 1.2px;
+   -webkit-text-stroke-color: #003D9E;
+   -webkit-text-fill-color: #FFFFFF;
+   margin: 20px 0 !important
+   padding: 0 !important;
+    }
+    span {
+        font-size: 38px;
+    }
+    p {
+        width: 100%;
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #000000;
+    }
+}
