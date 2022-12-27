@@ -452,3 +452,115 @@ Main Components
     transform: translateX(0%);
   }
 }
+/*team*/
+.about_us_team_content_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+    h3 {
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+    }
+}
+.about_us_team_content_wrapper_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    p{
+        width: 45%;
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
+    }
+}
+.about_us_team_button {
+    width: 260px;
+    height: 50px;
+    border: 1px solid #000000;
+border-radius: 4px;
+background: transparent;
+}
+/*contacts*/
+.about_us_contacts_wrapper {
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
+border-radius: 5px;
+}
+.about_us_contacts_info {
+    width: 50%;
+    padding: 20px 40px;
+    h3 {
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+color: #000000;
+    }
+}
+.about_us_map {
+    width: 50%;
+}
+.about_us_contacts_container {
+    display: flex;
+    flex-direction: column;
+    a {
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
+    }
+    p {
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
+    }
+}
+.about_us_phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+        margin: 0 10px 0 0;
+    }
+}
+.about_us_adress {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+        margin: 0 10px 0 0;
+    }
+}
+.about_us_watch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+        margin: 0 10px 0 0;
+    }
+}
+.about_us_contacts_requisites {
+    p {
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
+    }
+}
