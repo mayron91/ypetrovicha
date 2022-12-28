@@ -86,14 +86,22 @@ color: #000000;
     text-decoration: none;
 }
 
-.pagination a:active, a:hover {
-    color: #003D9E;
-    text-decoration: underline;
+.pagination {
+    a:active, a:hover {
+        color: #003D9E !important;
+        text-decoration: underline !important;
+    }
+    
 }
 .pagination_on_left::before {
-    content: url("../img/service_page/arrov.svg");
+    content: url("../img/services_page/arrow.svg");
+}
+.pagination_on_left{
+}
+.pagination_on_right {
+    transform: rotate(180deg) !important;
 }
 .pagination_on_right::before {
-    content: url("../img/service_page/arrov.svg");
-    transform: rotate(180rad);
+    content: url("../img/services_page/arrow.svg");
+    
 }
