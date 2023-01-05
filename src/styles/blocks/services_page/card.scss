@@ -93,15 +93,3 @@ color: #000000;
     }
     
 }
-.pagination_on_left::before {
-    content: url("../img/services_page/arrow.svg");
-}
-.pagination_on_left{
-}
-.pagination_on_right {
-    transform: rotate(180deg) !important;
-}
-.pagination_on_right::before {
-    content: url("../img/services_page/arrow.svg");
-    
-}
