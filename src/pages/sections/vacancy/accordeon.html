@@ -1,0 +1,60 @@
+<section class="our_works cont">
+    <div class="container">
+        <h2>Наши вакансии</h2>
+        <div class="accordion" id="accordion-1" style="margin: 1rem auto 2rem;">
+            <div class="accordion__item accordion__item_show">
+                <div class="accordion__header">
+                    Мастер кузовного ремонта
+                </div>
+                <div class="accordion__body">
+                    <div class="acco_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur et numquam optio, aut consequuntur
+                    iure magni
+                    tempore quo, velit, quos ipsum perferendis sit quidem sapiente voluptatem nesciunt rerum soluta
+                    amet.</div>
+                </div>
+            </div>
+            
+            <div class="accordion__item">
+                <div class="accordion__header">
+                    Мастер слесарного ремонта
+                </div>
+                <div class="accordion__body">
+                    <div class="acco_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur et numquam optio, aut consequuntur
+                    iure magni
+                    tempore quo, velit, quos ipsum perferendis sit quidem sapiente voluptatem nesciunt rerum soluta
+                    amet.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    class ItcAccordion {
+        constructor(target, config) {
+            this._el = typeof target === 'string' ? document.querySelector(target) : target;
+            const defaultConfig = {
+                alwaysOpen: true
+            };
+            this._config = Object.assign(defaultConfig, config);
+            this.addEventListener();
+        }
+        addEventListener() {
+            this._el.addEventListener('click', (e) => {
+                const elHeader = e.target.closest('.accordion__header');
+                if (!elHeader) {
+                    return;
+                }
+                if (!this._config.alwaysOpen) {
+                    const elOpenItem = this._el.querySelector('.accordion__item_show');
+                    if (elOpenItem) {
+                        elOpenItem !== elHeader.parentElement ? elOpenItem.classList.toggle('accordion__item_show') : null;
+                    }
+                }
+                elHeader.parentElement.classList.toggle('accordion__item_show');
+            });
+        }
+    }
+
+    new ItcAccordion('#accordion-1');
+    new ItcAccordion('#accordion-2');
+</script>

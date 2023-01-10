@@ -1,0 +1,59 @@
+.our_works {
+    h2 {
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 61px;
+color: #000000;
+    }
+}
+/*banner*/
+.vacancy_img {
+    width: 100%;
+    z-index: 0;
+}
+.vacancy_banner {
+    h1 {
+        width: 35%;
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 61px;
+color: #FFFFFF;
+text-align: left;
+text-transform:uppercase;
+z-index: 100;
+    }
+}
+
+.vacancy_banner_wripper {
+    position: relative;
+}
+.vacancy_wripper::before {
+  content: '';
+  z-index: 10;
+  width: 100%;
+  height: 99%;
+  display: block;
+  position: absolute;
+  background:  rgba(0, 0, 0, 0.4) 0%;
+  border-radius: 10px;
+}
+.vacancy_wripper {
+    display: flex;
+    flex-direction: column;
+    h2 {
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 61px;
+color: #000000;
+padding: 0 40px;
+    }
+}
