@@ -13,11 +13,10 @@ color: #000000;
     width: 100%;
     z-index: 0;
 }
-.vacancy_banner {
+.vacancy_banner_wripper {
     h1 {
-        width: 35%;
+        width: 20%;
         position: absolute;
-        top: 20%;
         left: 5%;
         font-family: 'Montserrat';
 font-style: normal;
@@ -29,12 +28,42 @@ text-align: left;
 text-transform:uppercase;
 z-index: 100;
     }
+    p {
+        width: 35%;
+        position: absolute;
+        top: 45%;
+        left: 5%;
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+z-index: 100;
+color: #FFFFFF;
+    }
+    input {
+        width: 300px;
+        height: 50px;
+        position: absolute;
+        top: 70%;
+        left: 5%;
+        z-index: 100;
+        border: 1px solid #FFFFFF;
+border-radius: 4px;
+background: transparent;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+    }
 }
 
 .vacancy_banner_wripper {
     position: relative;
 }
-.vacancy_wripper::before {
+.vacancy_banner_wripper::before {
   content: '';
   z-index: 10;
   width: 100%;
@@ -44,7 +73,7 @@ z-index: 100;
   background:  rgba(0, 0, 0, 0.4) 0%;
   border-radius: 10px;
 }
-.vacancy_wripper {
+.vacancy_banner_wripper {
     display: flex;
     flex-direction: column;
     h2 {
@@ -56,4 +85,9 @@ line-height: 61px;
 color: #000000;
 padding: 0 40px;
     }
+}
+/*choose_us*/
+.choose_us_block {
+    align-items: flex-start;
+    padding: 20px 0;
 }
