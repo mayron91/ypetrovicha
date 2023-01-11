@@ -79,3 +79,36 @@
     padding: 8px 20px;
     font-size: 14px;
 }
+/*black theme*/
+.black_theme_header_right {
+    color: #848484 !important;
+    a {
+        color: #848484 !important;
+}
+}
+.header__flag_black::before {
+    content: url("../img/map_black.svg");
+    margin: 0 5px 0 0;
+}
+.header__time_black::before {
+    content: url("../img/watch_black.svg");
+    margin: 0 5px 0 0;
+}
+.header__mail_black::before {
+    content: url("../img/mail_black.svg");
+    margin: 0 5px 0 0;
+}
+.phone::before {
+    content: url("../img/phone_black.svg");
+    margin: 0 5px 0 0;
+}
+.header__nav__btn_black {
+    border: 1px solid #D1D1D1;
+border-radius: 4px;
+    width: 9.35rem;
+    height: 30px;
+    text-align: center;
+    padding: 8px 20px;
+    font-size: 14px;
+    color: #D1D1D1;
+}
