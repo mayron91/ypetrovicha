@@ -204,3 +204,92 @@ align-items: center;
     width: 50%;
     justify-content: space-around;
 }
+/*contract form*/
+.contract_form_clients {
+    margin: 40px 0;
+}
+.contract_form_clients_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.contact_form_title {
+    background: #212129;
+border-radius: 10px 10px 0px 0px;
+min-height: 140px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 61px;
+color: #FFFFFF;
+padding: 0 40px;
+}
+.contact_form_input_wrapper {
+    background: #191920;
+    border-radius: 0px 0px 10px 10px;
+    padding: 40px 20px;
+    
+    h3 {
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+color: #D1D1D1;
+padding: 0 0 40px 0;
+    }
+}
+.contact_form_input_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.contact_form_input_wrapper_items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contact_form_input_item_wripper {
+    width: 30%;
+    p {
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #6D7487;
+margin: 0;
+padding: 0;
+    }
+    input {
+        min-width: 420px;
+        min-height: 50px;
+        background: #1E1E28;
+border: 1px solid #353546;
+border-radius: 4px;
+text-align: left;
+color: #6D7487;
+    }
+}
+.contact_form_enroll {
+    align-self: center;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+min-width: 300px;
+min-height: 50px;
+margin-top: 40px;
+}
+.contact-checkbox {
+    align-self: center;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #6D7487;
+margin-top: 40px;
+}
