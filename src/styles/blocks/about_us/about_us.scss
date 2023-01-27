@@ -68,136 +68,403 @@ align-self:flex-end;
     }
 }
 /*timeline*/
-$primary-color: #000;
-$secondary-color: #888;
-.time_line_wrapper {
-  position: relative;
-  height: 100%;
-  overflow: hidden;
-  background: #eee;
-  margin: 0;
-  padding: 0;
+
+/* Timeline defaults */
+/* --------------------------------------- */
+.h--timeline-container *,
+.h--timeline-events *{
+  outline:0;
 }
-.swiper-container-wrapper {
-  &--timeline {
-    .swiper-slide {
-      display: flex;
-      background: #fff;
-      min-height: 300px;
-      align-items: center;
-      justify-content: center;
-      border-radius: 10px;
-      .container {
-        padding: 0;
-      }
-      .title{
-        font-size: 18px;
-        opacity: 0;
-        transition: 0.5s ease 0.5s;
-      }
-      &-active{
-        .title{
-          opacity: 1;
-        }
-      }
-    }
-    .swiper-pagination-progressbar {
-      position: relative;
-      margin-bottom: 70px;
-      background-color: transparent;
-      height: 4px;
-      border-bottom: 1px solid $secondary-color;
-      width: 75%;
-      &-fill {
-        background-color: $primary-color;
-        height: 3px;
-        top: 2px;
-      }
-      &:before {
-        position: absolute;
-        top: 2px;
-        left: -100%;
-        width: 100%;
-        height: 3px;
-        background-color: $primary-color;
-        content: "";
-      }
-      &:after {
-        position: absolute;
-        top: 3px;
-        right: -100%;
-        width: 100%;
-        height: 1px;
-        background-color: $secondary-color;
-        content: "";
-      }
-    }
-    .swiper-pagination-custom {
-      position: relative;
-      list-style: none;
-      margin: 1rem 0;
-      padding: 0;
-      display: flex;
-      line-height: 1.66;
-      bottom: 0;
-      z-index: 11;
-      width: 75%;
-      display: flex;
-      .swiper-pagination-switch {
-        position: relative;
-        width: 100%;
-        height: 30px;
-        line-height: 30px;
-        display: block;
-        .switch-title {
-          position: absolute;
-          font-weight: 400;
-          right: 0;
-          transform: translateX(50%);
-          transition: 0.2s all ease-in-out;
-          transition-delay: 0s;
-          cursor: pointer;
-          z-index: 1;
-          &:after {
-            position: absolute;
-            top: calc(100% + 19px);
-            right: 50%;
-            transform: translateX(50%) translateY(-50%);
-            width: 12px;
-            height: 12px;
-            background: $primary-color;
-            border-radius: 2rem;
-            content: "";
-            transition: 0.2s all ease-in-out;
-            transition-delay: 0s;
-            z-index: 1;
-          }
-        }
-        &.active {
-          .switch-title {
-            font-weight: 400;
-            transition-delay: 0.4s;
-            &:after {
-              background: $primary-color;
-              width: 25px;
-              height: 25px;
-              transition-delay: 0.4s;
-            }
-          }
-          ~ .swiper-pagination-switch {
-            .switch-title {
-              color: $secondary-color;
-              font-weight: 16px;
-              &:after {
-                background: $secondary-color;
-              }
-            }
-          }
-        }
-      }
-    }
+.h--timeline-container,
+.h--timeline-events{
+    position:relative;
+    width:100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.h--timeline-navigation-container ul, .h--timeline-navigation-container li,
+.h--timeline-events ol, .h--timeline-events li,
+.h--timeline-line ol, .h--timeline-line li {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+.h--timeline{
+    opacity:0;
+    transition:opacity 0.2s;
+    font-family:sans-serif;
+    font-size:1rem;
+    font-weight:normal;
+    line-height: 1.5;
+}
+.h--timeline--loaded{
+    opacity:1
+}
+.h--timeline-container{
+    height:120px;
+}
+.h--timeline-dates{
+    position:relative;
+    height:100%;
+    margin:0 40px;
+    overflow:hidden;
+}
+
+/* Timeline blur effect for start and end */
+/* --------------------------------------- */
+.h--timeline-dates::after,.h--timeline-dates::before{
+    content:'';
+    position:absolute;
+    z-index:2;
+    top:0;
+    height:100%;
+    width:50px;
+}
+.h--timeline-dates::before{
+    left:0;
+    background:linear-gradient(to right, hsl(0, 0%, 100%), hsla(0, 0%, 100%, 0));
+}
+.h--timeline-dates::after{
+    right:0;
+    background:linear-gradient(to left, hsl(0, 0%, 100%), hsla(0, 0%, 100%, 0));
+}
+
+/* Timeline horizontal line */
+/* --------------------------------------- */
+.h--timeline-line{
+    position:absolute;
+    z-index:1;
+    left:-20px;
+    top:49px;
+    height:2px;
+    background-color:#f7f7f7;
+    transition:-webkit-transform 0.4s;
+    transition:transform 0.4s;
+    transition:transform 0.4s, -webkit-transform 0.4s;
+}
+.h--timeline-filling-line{
+    position:absolute;
+    z-index:1;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background-color:#C4C4C4;
+    -webkit-transform:scaleX(0);
+    -ms-transform:scaleX(0);
+    transform:scaleX(0);
+    -webkit-transform-origin:left center;
+    -ms-transform-origin:left center;
+    transform-origin:left center;
+    transition:-webkit-transform 0.3s;
+    transition:transform 0.3s;
+    transition:transform 0.3s, -webkit-transform 0.3s;
+}
+
+
+/* Bullet points */
+/* --------------------------------------- */
+.time-line-list {
+  span {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+
+color: #C4C4C4;
   }
 }
+.h--timeline-date{
+    position:absolute;
+    bottom: 0;
+    z-index:2;
+    text-align:center;
+    font-size:1rem;
+    font-weight: 600;
+    padding-bottom:0.75rem;
+    color:#000;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    text-decoration:none;
+    
+}
+.h--timeline-date:hover{
+    font-weight: 600;
+}
+.h--timeline-date::after,
+.h--timeline-date::before{
+    content:'';
+    position:absolute;
+    left:50%;
+    -webkit-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    transform:translateX(-50%);
+    bottom:-8px;
+    height:15px;
+    width:15px;
+    border-radius:50%;
+    background: #C4C4C4;
+    border: 2px solid #FFFFFF;
+    transition:background-color 0.3s, border-color 0.3s, top 0.3s;
+}
+.h--timeline-date::before{
+    bottom:-3px;
+    height:9px;
+    width:9px;
+    border-width:0px;
+    border-color:transparent;
+    background-color:transparent;
+    z-index:2;
+}
+.h--timeline-date:hover::before,
+.h--timeline-date:hover::after{
+    transition:background-color 0.3s, border-color .3s, top .3s;
+}
+.h--timeline-date--selected{
+    pointer-events:none;
+    span {
+      display: none;
+    }
+}
+.h--timeline-date:hover{
+  span {
+    display: none;
+  }
+}
+
+
+/* Caroussel navigation */
+/* --------------------------------------- */
+.h--timeline-navigation{
+    font-size: 0;
+    position:absolute;
+    z-index:1;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%);
+    height:60px;
+    width:40px;
+    background: url("../img/about_us/nav.svg") no-repeat center center;
+}
+
+.h--timeline-navigation--prev{
+    left:0;
+    -webkit-transform:translateY(-50%) rotate(180deg);
+    -ms-transform:translateY(-50%) rotate(180deg);
+    transform:translateY(-50%) rotate(180deg);
+}
+.h--timeline-navigation--next{
+    right:0;
+}
+.h--timeline-navigation--inactive{
+    cursor:not-allowed;
+}
+.h--timeline-navigation--inactive::after{
+    background-position:0 -16px;
+}
+.h--timeline-navigation--inactive:hover{
+    border-color:#f7f7f7;
+}
+
+/* Timeline events container */
+.timeline-event-content-wripper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about_us_time_line_title {
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 61px;
+color: #000000;
+}
+/* --------------------------------------- */
+.h--timeline-events{
+    overflow:hidden;
+    transition:height .4s;
+	padding-bottom: 2rem;
+}
+.h--timeline-event{
+    position:absolute;
+    z-index:1;
+    width:100%;
+    left:0;
+    top:0;
+    -webkit-transform:translateX(-100%);
+    -ms-transform:translateX(-100%);
+    transform:translateX(-100%);
+    padding:1px 5%;
+    opacity:0;
+    -webkit-animation-duration:0.4s;
+    animation-duration:0.4s;
+    -webkit-animation-timing-function:ease-in-out;
+    animation-timing-function:ease-in-out;
+}
+.h--timeline-event-content{
+    width:100%;
+    min-height: 360px;
+    margin:2rem auto 0;
+	padding: 0 0 0 2rem;
+	border: 1px solid #f7f7f7;
+	background: #FFFFFF;
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
+border-radius: 10px;
+display: flex;
+flex-direction: row;
+}
+.h--timeline-event-description {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
+margin: 0 8rem 0 0;
+}
+.h--timeline-event--selected{
+    position:relative;
+    z-index:2;
+    opacity:1;
+    -webkit-transform:translateX(0);
+    -ms-transform:translateX(0);
+    transform:translateX(0);
+}
+
+/* Timeline animations */
+/* --------------------------------------- */
+.h--timeline-event--enter-right,.h--timeline-event--leave-right{
+    -webkit-animation-name:cd-enter-right;
+    animation-name:cd-enter-right;
+}
+.h--timeline-event--enter-left,.h--timeline-event--leave-left{
+    -webkit-animation-name:cd-enter-left;
+    animation-name:cd-enter-left ;
+}
+.h--timeline-event--leave-right,.h--timeline-event--leave-left{
+    animation-direction:reverse;
+}
+.h--timeline-event-title{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.h--timeline-event-date{
+    display:block;
+    font-style:italic;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 78px;
+color: #F7F7F7;
+align-self: center;
+margin-right: 20px;
+}
+@-webkit-keyframes cd-enter-right{
+    0%{
+        opacity:0;
+        -webkit-transform:translateX(100%);
+        transform:translateX(100%);
+    }
+    100%{
+        opacity:1;
+        -webkit-transform:translateX(0%);
+        transform:translateX(0%);
+    }
+}
+@keyframes cd-enter-right{
+    0%{
+        opacity:0;
+        -webkit-transform:translateX(100%);
+        transform:translateX(100%);
+    }
+    100%{
+        opacity:1;
+        -webkit-transform:translateX(0%);
+        transform:translateX(0%);
+    }
+}
+@-webkit-keyframes cd-enter-left{
+    0%{
+        opacity:0;
+        -webkit-transform:translateX(-100%);
+        transform:translateX(-100%);
+    }
+    100%{
+        opacity:1;
+        -webkit-transform:translateX(0%);
+        transform:translateX(0%);
+    }
+}
+@keyframes cd-enter-left{
+    0%{
+        opacity:0;
+        -webkit-transform:translateX(-100%);
+        transform:translateX(-100%);
+    }
+    100%{
+        opacity:1;
+        -webkit-transform:translateX(0%);
+        transform:translateX(0%);
+    }
+}
+
+
+/* Overwrites */
+/* Change the position of dates top / botom / top */
+/* --------------------------------------- */
+
+.h--timeline-date--selected::after{
+    background-color:#C4C4C4;
+    border-color:#FFFFFF;
+}
+.h--timeline-date--older-event::after{
+  background-color:#C4C4C4;
+  border-color:#FFFFFF;
+}
+.h--timeline-line  .h--timeline-date{
+    bottom:-48px;
+}
+.h--timeline-line li .h--timeline-date--selected::after,
+.h--timeline-line li .h--timeline-date:hover::after{
+    width:67px;
+    height:67px;
+    margin-left: 23px;
+    z-index: 999;
+    border-radius: 50%;
+    border: 2px solid #003D9E;
+    background-color: #FFFFFF;
+    bottom: 15px;
+    background: url("../img/about_us/flag.svg") #ffffff no-repeat center center;
+}
+.h--timeline-line  .h--timeline-date::after{
+    bottom:40px;
+}
+.h--timeline-line  .h--timeline-date:hover::after,
+.h--timeline-line  .h--timeline-date--selected::after{
+    bottom:37px;
+}
+.h--timeline-line  .h--timeline-date::before{
+    bottom:45px;
+}
+.h--timeline-line  .h--timeline-date:hover::before,
+.h--timeline-line  .h--timeline-date--selected::before{
+    bottom:-3px;
+}
+/**/
+
 
 /*team*/
 .about_us_team_content_wrapper {
