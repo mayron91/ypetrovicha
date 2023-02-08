@@ -3,18 +3,20 @@
 }
 
 .about_us_inner {
-    background-image: url(img/main_car.jpg);
+    width: 100%;
+    background: url("../img/main_car.jpg") no-repeat;
+    background-size: 100%;
     display: flex;
+    flex-direction: row;
 }
 
 .about_text {
     background: #000000;
     opacity: 0.8;
     color: white;
-    min-width: 380px;
-    max-height: 551PX;
+    width: 35%;
+    height: 550PX;
     padding: 60px 40px;
-    
     & p {
         padding: 25px 0px;
         margin-bottom: 30px 
