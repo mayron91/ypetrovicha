@@ -7,7 +7,6 @@
     margin: 20px 0;
 }
 .banner_img {
-    max-width: 100%;
     width: 100%;
 }
 
@@ -18,4 +17,11 @@
     left:40px;
     max-width:25%;
     font-size:18px;
+}
+/*mobile*/
+@media ( min-width: 350px) and (max-width: 1325px) {
+    .banner_img {
+        width: 100%;
+    }
+   
 }
