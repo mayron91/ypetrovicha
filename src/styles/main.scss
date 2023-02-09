@@ -19,15 +19,15 @@ $base-transition: all 230ms ease;
 html, body {
     font-family: $font-family;
     color: $font-color;
-    font-size: 16PX;
+    font-size: 14PX;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     @include respond-from('laptop-hdpi') {
-        font-size: 18PX;
+        font-size: 16PX;
     }
     @include respond-from('2K') {
-        font-size: 21PX;
+        font-size: 18PX;
     }
     @include respond-from('UHD') {
         font-size: 60PX;
@@ -62,16 +62,19 @@ html, body {
         color: #848484;
     }
 }
+.mob {
+    display: none;
+}
 /*mobile*/
-@media ( min-width: 350px) and (max-width: 1325px) {
-    .container {
-        max-width: 350px + 20px;
-        margin: 0 auto;
-        transition: $base-transition;
-        @include respond-to('5s') {
-        }
-    }
-   
+
+
+@media ( min-width: 350px) and (max-width: 1250px) {
+   .not_mob {
+    display: none;
+   }
+   .mob {
+    display: block;
+}
 }
 
 

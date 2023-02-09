@@ -22,18 +22,6 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    transform: scale(0.7);
-}
-
-.swiper-slide-active {
-}
-
-.swiper-slide-prev {
-    transform: scale(0.85);
-}
-
-.swiper-slide-next {
-    transform: scale(0.85);
 }
 
 .swiper-button-next {
@@ -46,14 +34,23 @@ color: #C8C8C8;
     color: #C8C8C8;
 }
 
-@media (max-width: 760px) {
-    .swiper-button-next {
-        right: 20px;
-        transform: rotate(90deg);
-    }
 
+@media ( min-width: 350px) and (max-width: 800px) {
+    .img_clients {
+        width: 100px;
+    }
+    .swiper-slide {
+        margin: 0 15px;
+    }
+    .swiper-button-next  {
+        width: 25px !important;
+        height: 40px !important;
+    }
     .swiper-button-prev {
-        left: 20px;
-        transform: rotate(90deg);
+        width: 25px !important;
+        height: 40px !important;
+    }
+    .index_swiper_brands_mob {
+        margin: 40px 0 0 0;
     }
 }

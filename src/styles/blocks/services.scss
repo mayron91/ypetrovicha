@@ -17,6 +17,7 @@
 .services_img {
     max-width: 100%;
     width: 100%;
+    border-radius: 10px;
 }
 
 .services_text {
@@ -32,4 +33,32 @@
         font-weight:200;
         font-size:24px;
     }
+}
+@media ( min-width: 350px) and (max-width: 800px) {
+    .services_wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    .services {
+        padding: 0;
+   }
+   .services_img {
+    max-width: 100%;
+    min-width: 150px;
+    min-height: 87px;
+}
+h2 {
+    font-size: 20px;
+}
+.services_text {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px;
+    & span {
+        font-weight:200;
+        font-size:12px;
+    }
+}
 }

@@ -3,7 +3,7 @@
 }
 .banner_item h1 {
     padding-left:20px;
-    font-size: 48px;
+    font-size: 40px;
     margin: 20px 0;
 }
 .banner_img {
@@ -19,9 +19,19 @@
     font-size:18px;
 }
 /*mobile*/
-@media ( min-width: 350px) and (max-width: 1325px) {
+@media ( min-width: 350px) and (max-width: 800px) {
     .banner_img {
         width: 100%;
+        min-width: 320px;
+        min-height: 220px;
     }
-   
+    .banner_item_text {
+        max-width:50% !important;
+        font-size:12px;
+        left:10px;
+    }
+    .banner_item h1 {
+        font-size: 22px;
+        text-transform: uppercase;
+    }
 }

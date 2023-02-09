@@ -29,3 +29,17 @@
         padding: 15px 20px;
     }
 }
+@media ( min-width: 350px) and (max-width: 1250px) {
+    .about_us_inner {
+        background: #FFFFFF;
+    }
+    .about_text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .video_full_wrapper {
+        max-width: 320px;
+        max-height: 180px;
+    }
+ }

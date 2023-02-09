@@ -96,14 +96,4 @@ color: #3442C1;
     border: 1px solid #000;
     border-radius: 5px;
 }
-@media (max-width: 760px) {
-    .swiper-button-next {
-        right: 20px;
-        transform: rotate(90deg);
-    }
 
-    .swiper-button-prev {
-        left: 20px;
-        transform: rotate(90deg);
-    }
-}
