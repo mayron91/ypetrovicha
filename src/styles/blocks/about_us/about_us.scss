@@ -578,3 +578,18 @@ line-height: 19px;
 color: #000000;
     }
 }
+/*mobile*/
+@media ( min-width: 350px) and (max-width: 1250px) {
+    .statistic_about_us_wrapper {
+        flex-wrap: wrap;
+    }
+    .statistic_about_us_item {
+        width: 50%;
+    }
+    .statistic_about_us_item_wapper {
+        h2 {
+            font-size: 30px;
+line-height: 37px;
+        }
+    }
+ }
