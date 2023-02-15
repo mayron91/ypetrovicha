@@ -36,7 +36,32 @@ color: #000000;
     flex-direction: row;
     flex-wrap: wrap;
     img {
-        width: 48%;
-        margin: 1%;
+        width: 46%;
+        margin: 2%;
     }
 }
+/*Mobile*/
+@media ( min-width: 350px) and (max-width: 1250px) {
+    .aboutus_who_are_we_wrapper {
+        h2 {
+            font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+color: #000000;
+margin-top: 140px;
+        }
+    }
+    .who_are_we_content_wrapper {
+        flex-direction: column-reverse;
+
+    }
+    .who_are_we_text {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .who_are_we_img {
+        width: 100%;
+    }
+ }
