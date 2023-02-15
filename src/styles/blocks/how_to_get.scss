@@ -62,3 +62,34 @@
     width:100%;
     min-height: 426px;
 }
+/*Mob*/
+@media ( min-width: 350px) and (max-width: 1250px) {
+   .how_to_get_text {
+    background: #FFFFFF;
+    
+    p {
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    img {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+    }
+    }
+   }
+   .how_to_get_inner_mob {
+    p {
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+color: #000000;
+padding: 10px 0;
+    }
+   }
+ }

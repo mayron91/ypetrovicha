@@ -225,3 +225,37 @@ text-align: center;
 color: #444444;
 }
 .pointer:hover { cursor: pointer; }
+/*mobile*/
+
+
+@media ( min-width: 350px) and (max-width: 1250px) {
+    .footer_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_contacts_wrapper {
+        width: 100%;      
+    }
+    .footer_enroll {
+        width: 100%; 
+        align-items: flex-start;
+        p {
+            width: 100%;
+            align-self: start;
+        }
+    }
+    .footer_services_wrapper {
+        width: 100%; 
+    }
+    .enroll_connection_wrapper_footer {
+        align-items: flex-start;
+        width: 100%;
+        text-align: left;
+    }
+    .input_phone_footer {
+        width: 100% !important;
+    }
+    .enroll_footer_buttom {
+        width: 100%;
+    }
+ }

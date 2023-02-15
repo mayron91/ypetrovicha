@@ -55,5 +55,15 @@ width:100%;
     color: white;
     font-size:30px;
   }
+/*mobile*/
 
+
+@media ( min-width: 350px) and (max-width: 1250px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+ }
   
