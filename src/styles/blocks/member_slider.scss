@@ -166,4 +166,14 @@ line-height: 19px;
 .rate-area > label:active {
 	position: relative;
 }
-
+/*mobile*/
+@media ( min-width: 350px) and (max-width: 1250px) {
+    .member_slider_item {
+        min-width: 33% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .button-member-slider::after {
+        display: none;
+    }
+ }
