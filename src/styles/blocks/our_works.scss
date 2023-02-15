@@ -62,8 +62,44 @@ width:100%;
     .wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 5px;
-        grid-row-gap: 5px;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        
+    }
+    .works_item {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        p {
+            display: block;
+            margin: 0;
+            padding: 20px 0 0 0;
+            font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 17px;
+color: #000000;
+        }
+        img {
+            border-radius: 10px;
+        }
+    }
+    .our_works_mob_btn {
+        min-width: 320px;
+        width: 100%;
+min-height: 50px;
+border: 1px solid #000000;
+border-radius: 4px;
+margin-top: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 19px;
     }
  }
   
