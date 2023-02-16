@@ -70,10 +70,10 @@ html, body {
 
 @media ( min-width: 350px) and (max-width: 1250px) {
    .not_mob {
-    display: none;
+    display: none !important;
    }
    .mob {
-    display: block;
+    display: block !important;
 }
 }
 

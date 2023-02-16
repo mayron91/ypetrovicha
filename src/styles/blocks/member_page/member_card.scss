@@ -214,3 +214,63 @@ line-height: 19px;
 color: #000000;
     }
 }
+/*mobile*/
+
+
+@media ( min-width: 350px) and (max-width: 1250px) {
+    .member_card_img {
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+    }
+    .member_card_img_input {
+        min-width: 100%;
+    }
+    .member_page_card_line {
+        display: none;
+    }
+    .member_card_info_main {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .member_card_info_main_wrapper {
+        h3 {
+            width: 100%;
+        }
+    }
+    .member_card_info_sub {
+        display: none;
+    }
+    .member_card_contacts_wrapper {
+        p {
+            width: 100%;
+        }
+    }
+    .member_card_sub_info {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    .work_with_mob_title {
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+padding: 20px 0 0 0;
+    }
+    .member_reviews {
+        h2 {
+            font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+align-items: center;
+color: #000000;
+        }
+    }
+ }

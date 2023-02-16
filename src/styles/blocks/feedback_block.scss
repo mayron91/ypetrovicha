@@ -77,3 +77,12 @@ font-size: 16px;
 line-height: 19px;
 color: #FFFFFF;
 }
+
+/*mobile*/
+
+
+@media ( min-width: 350px) and (max-width: 1250px) {
+    .feedback_block_form {
+        flex-direction: column;
+    }
+ }
