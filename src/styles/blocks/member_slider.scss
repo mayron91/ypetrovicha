@@ -169,11 +169,31 @@ line-height: 19px;
 /*mobile*/
 @media ( min-width: 350px) and (max-width: 1250px) {
     .member_slider_item {
-        min-width: 33% !important;
+        width: 40% !important;
         margin: 0 !important;
         padding: 0 !important;
     }
     .button-member-slider::after {
         display: none;
+    }
+    .member_swiper_substrate {
+        display: none;
+    }
+    .member_swiper_slide_content {
+        a {
+            h3 {
+                width: 100%;
+                font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+text-align: center;
+color: #000000;
+            }
+        }
+    }
+    .about_us_team_button {
+        width: 100%;
     }
  }
