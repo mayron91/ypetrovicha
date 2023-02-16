@@ -189,3 +189,31 @@ margin: 20px 0;
     display: flex;
     flex-direction: column;
 }
+/*mobile*/
+
+
+@media ( min-width: 350px) and (max-width: 1250px) {
+    .news_item_wrapper {
+            h1 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                color: #000000;
+            }
+            img {
+                width: 100%;
+            }
+    }
+    .news_item_content_wrapper {
+        flex-direction: column-reverse;
+    }
+.news_item_content_text {
+    width: 100%;
+}
+.comment_border_back {
+    width: 80%;
+    left: 10%;
+}
+ }
