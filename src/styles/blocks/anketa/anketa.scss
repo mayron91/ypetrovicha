@@ -65,3 +65,19 @@ border-bottom: 1px solid #C8C8C8;
     color: #FFFFFF;
     border: 0;
 }
+/*mobile*/
+
+
+@media ( min-width: 350px) and (max-width: 1250px) {
+    .anketa_form {
+        width: 100%;
+    }
+    .aboutus_who_are_we_wrapper {
+        h2 {
+            margin: 0 10px;
+        }
+    }
+    .anketa_button {
+        width: 90%;
+    }
+ }
