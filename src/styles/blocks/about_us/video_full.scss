@@ -6,5 +6,11 @@
 }
 .video_full_frame {
     width: 1546px;
-    height: 638px;
+    min-height: 638px;
 }
+@media ( min-width: 350px) and (max-width: 1250px) {
+    .video_full_frame {
+        width: 100%;
+        min-height: 200px !important;
+    }
+ }
