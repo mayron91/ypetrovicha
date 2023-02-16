@@ -84,5 +84,28 @@ color: #FFFFFF;
 @media ( min-width: 350px) and (max-width: 1250px) {
     .feedback_block_form {
         flex-direction: column;
+        p {
+            input {
+                width: 100%;
+            }
+        }
+    }
+    .feedback_block {
+        h2 {
+            font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+color: #000000;
+        }
+    }
+    .feedback_block_wrapper_margin {
+        width: 90%;
+    }
+    .feedback_block_submit {
+        width: 100%;
     }
  }
