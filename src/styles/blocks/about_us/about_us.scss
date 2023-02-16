@@ -689,4 +689,20 @@ font-size: 20px;
 line-height: 24px;
 color: #000000;
     }
+    .about_us_contacts_wrapper {
+        flex-direction: column;
+    }
+    .about_us_contacts_info {
+        width: 100%;
+        h3 {
+            font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+        }
+    }
+    .about_us_map {
+        width: 100%;
+    }
  }
