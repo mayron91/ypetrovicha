@@ -79,3 +79,14 @@ color: #848484 !important;
 .button-member-reviews-slider {
     top: 55%;
 }
+/*mobile*/
+
+
+@media ( min-width: 350px) and (max-width: 1250px) {
+    .member_reviews_slider_item {
+        width: 90% !important;
+    }
+    .member_reviews_swiper_substrate {
+        display: none;
+    }
+ }
