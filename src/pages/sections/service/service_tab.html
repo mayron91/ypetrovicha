@@ -1,4 +1,4 @@
-<section class="service__tabs">
+<section class="service__tabs not_mob">
   <div class="container">
   <div class="tabs">
     <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
@@ -61,3 +61,69 @@
 </div>
 </div>
 </section>
+<section class="service_tabmob mob">
+  <div class="container">
+    <div class="accordion" id="accordion-1" style="margin: 1rem auto 2rem;">
+      <div class="accordion__item accordion__item_show">
+          <div class="accordion__header">
+            Когда необходимо сделать?
+          </div>
+          <div class="accordion__body">
+              <div class="acco_text">
+                <ol>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus est quos laboriosam quas explicabo neque, ratione facilis laudantium dignissimos odio iusto nisi accusamus voluptatibus, sunt illum minus eos, sequi recusandae.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus est quos laboriosam quas explicabo neque, ratione facilis laudantium dignissimos odio iusto nisi accusamus voluptatibus, sunt illum minus eos, sequi recusandae.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus est quos laboriosam quas explicabo neque, ratione facilis laudantium dignissimos odio iusto nisi accusamus voluptatibus, sunt illum minus eos, sequi recusandae.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus est quos laboriosam quas explicabo neque, ratione facilis laudantium dignissimos odio iusto nisi accusamus voluptatibus, sunt illum minus eos, sequi recusandae.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus est quos laboriosam quas explicabo neque, ratione facilis laudantium dignissimos odio iusto nisi accusamus voluptatibus, sunt illum minus eos, sequi recusandae.</li>
+                </ol></div>
+          </div>
+      </div>
+      
+      <div class="accordion__item">
+          <div class="accordion__header">
+            Когда необходимо сделать?
+          </div>
+          <div class="accordion__body">
+              <div class="acco_text"><ol>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus est quos laboriosam quas explicabo neque, ratione facilis laudantium dignissimos odio iusto nisi accusamus voluptatibus, sunt illum minus eos, sequi recusandae.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus est quos laboriosam quas explicabo neque, ratione facilis laudantium dignissimos odio iusto nisi accusamus voluptatibus, sunt illum minus eos, sequi recusandae.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus est quos laboriosam quas explicabo neque, ratione facilis laudantium dignissimos odio iusto nisi accusamus voluptatibus, sunt illum minus eos, sequi recusandae.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus est quos laboriosam quas explicabo neque, ratione facilis laudantium dignissimos odio iusto nisi accusamus voluptatibus, sunt illum minus eos, sequi recusandae.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus est quos laboriosam quas explicabo neque, ratione facilis laudantium dignissimos odio iusto nisi accusamus voluptatibus, sunt illum minus eos, sequi recusandae.</li>
+              </ol></div>
+          </div>
+      </div>
+  </div>
+  </div>
+</section>
+<script>
+  class ItcAccordion {
+      constructor(target, config) {
+          this._el = typeof target === 'string' ? document.querySelector(target) : target;
+          const defaultConfig = {
+              alwaysOpen: true
+          };
+          this._config = Object.assign(defaultConfig, config);
+          this.addEventListener();
+      }
+      addEventListener() {
+          this._el.addEventListener('click', (e) => {
+              const elHeader = e.target.closest('.accordion__header');
+              if (!elHeader) {
+                  return;
+              }
+              if (!this._config.alwaysOpen) {
+                  const elOpenItem = this._el.querySelector('.accordion__item_show');
+                  if (elOpenItem) {
+                      elOpenItem !== elHeader.parentElement ? elOpenItem.classList.toggle('accordion__item_show') : null;
+                  }
+              }
+              elHeader.parentElement.classList.toggle('accordion__item_show');
+          });
+      }
+  }
+
+  new ItcAccordion('#accordion-1');
+  new ItcAccordion('#accordion-2');
+</script>
