@@ -10,7 +10,7 @@ color: #35393F;
 }
 .enroll_block_wrapper {
     display: flex;
-    max-height: 360px;
+    min-height: 360px;
     background: #FFFFFF;
 box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
 border-radius: 10px 0px 0px 10px;
@@ -109,3 +109,38 @@ line-height: 19px;
      }
 
 }
+
+/*mobile*/
+
+
+@media ( min-width: 350px) and (max-width: 1250px) {
+    .enroll_block {
+        div {
+            h2 {
+                margin-top: 50px;
+                font-size: 20px;
+line-height: 24px;
+            }
+        }
+    }
+    .enroll_connection_wrapper {
+        width: 100%;
+        p {
+            width: 100%;
+            input {
+                margin-top: 10px;
+            }
+        }
+      
+    }
+    .enroll_select {
+        p {
+            margin-top: 10px;
+        }
+    }
+    .enroll_block_buttom {
+        input {
+            margin-top: 1.625rem;
+        }
+    }
+ }
