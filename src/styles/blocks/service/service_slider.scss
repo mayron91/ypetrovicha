@@ -97,3 +97,19 @@ color: #3442C1;
     border-radius: 5px;
 }
 
+/*mobile*/
+
+
+@media ( min-width: 350px) and (max-width: 1250px) {
+    .swiper-slide {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .swiper-button-next-products::after {
+        display: none;
+    }
+    .swiper-button-prev-products::after {
+        display: none;
+    }
+ }
