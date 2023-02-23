@@ -46,8 +46,7 @@ padding: 0 1.125rem;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     margin: 20px 1%;
 }
-.swiper-slide-active {
-}
+
 
 .swiper-slide-prev {
     transform: scale(0.85);
@@ -101,10 +100,15 @@ color: #3442C1;
 
 
 @media ( min-width: 350px) and (max-width: 1250px) {
-    .swiper-slide {
-        width: 100% !important;
-        margin: 0 !important;
-        padding: 0 !important;
+    .service_slider_item {
+        width: 80% !important;
+        transform: none;
+    }
+    .swiper-slide-img-wrapper {
+        width: 100%;
+    }
+    .swiper-slide-content {
+        width: 100%;
     }
     .swiper-button-next-products::after {
         display: none;
@@ -112,4 +116,5 @@ color: #3442C1;
     .swiper-button-prev-products::after {
         display: none;
     }
+   
  }

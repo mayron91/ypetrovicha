@@ -37,13 +37,7 @@
     align-items: center;
 }
 
-.swiper-slide-prev {
 
-}
-
-.swiper-slide-next {
-
-}
 
 .member_slider_item {
     width: 18% !important;
@@ -170,8 +164,8 @@ line-height: 19px;
 @media ( min-width: 350px) and (max-width: 1250px) {
     .member_slider_item {
         width: 40% !important;
-        margin: 0 !important;
-        padding: 0 !important;
+        padding: 0 10px !important;
+        transform: none;
     }
     .button-member-slider::after {
         display: none;
