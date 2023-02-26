@@ -376,4 +376,27 @@ line-height: 18px;
    flex-basis: 100%;
    margin: 20px;
 }
+.contact_form_title {
+    min-height: 100px;
+    h2 {
+        font-size: 20px;
+line-height: 24px;
+    }
+}
+.contact_form_input_wrapper {
+    flex-direction: column;
+    h3 {
+        font-size: 16px;
+line-height: 18px;
+    }
+}
+.contact_form_input_item_wripper {
+    width: 100%;
+    p {
+        width: 100%;
+    }
+    input {
+        min-width: 280px;
+    }
+}
  }
