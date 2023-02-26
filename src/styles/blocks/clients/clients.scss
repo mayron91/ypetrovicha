@@ -293,3 +293,30 @@ line-height: 19px;
 color: #6D7487;
 margin-top: 40px;
 }
+/*mobile*/
+
+
+@media ( min-width: 350px) and (max-width: 1250px) {
+    .clients_catalog_banner_wripper {
+        justify-content: flex-end;
+        position: relative;
+        h1 {
+            font-size: 18px;
+line-height: 22px;
+position: absolute;
+top: 50%;
+max-height: 50px;
+        }
+        ul {
+            position: absolute;
+            top: 70%;
+height: auto;
+left: 0px;
+            li {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+
+ }
