@@ -318,5 +318,29 @@ left: 0px;
             }
         }
     }
-
+.clients_service__benefits {
+    h2 {
+        margin-top: 70px;
+        font-size: 22px;
+line-height: 26px;
+    }
+}
+.clients_benefits__wrapper {
+}
+.clients_benefits__item {
+    flex-basis: 46% !important;
+    margin: 10px 2%;
+    padding: 0;
+}
+.clients_benefits__content {
+    h3 {
+        width: 100%;
+        font-size: 13px;
+line-height: 17px;
+color: #5B9DFF;
+    }
+    p {width: 100%;
+        font-size: 12px;
+        line-height: 14px;}
+}
  }
