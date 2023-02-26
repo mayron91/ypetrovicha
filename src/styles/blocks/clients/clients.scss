@@ -293,6 +293,9 @@ line-height: 19px;
 color: #6D7487;
 margin-top: 40px;
 }
+.white_text {
+    color: #fff;
+}
 /*mobile*/
 
 
@@ -398,5 +401,21 @@ line-height: 18px;
     input {
         min-width: 280px;
     }
+}
+.our_works_mob_btn {
+    border: 1px solid #FFFFFF;
+border-radius: 4px;
+color: #fff;
+font-size: 16px;
+line-height: 19px;
+}
+.how_to_get_text {
+    background-color: transparent;
+    p {
+        color: #fff;
+    }
+}
+.white_text {
+    color: #fff !important;
 }
  }
