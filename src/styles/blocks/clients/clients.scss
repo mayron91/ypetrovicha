@@ -325,8 +325,7 @@ left: 0px;
 line-height: 26px;
     }
 }
-.clients_benefits__wrapper {
-}
+
 .clients_benefits__item {
     flex-basis: 46% !important;
     margin: 10px 2%;
@@ -358,5 +357,23 @@ line-height: 37px;
         font-size: 14px;
 line-height: 16px;
     }
+}
+.clients_call_form_wrapper {
+    flex-wrap: wrap;
+    img {
+        margin: 30px 20px;
+        max-width: 52px;
+        max-height: 52px;
+    }
+    h3 {
+        width: 75%;
+        font-size: 16px;
+line-height: 18px;
+    }
+}
+.clients_call_form_container {
+   flex-direction: column;
+   flex-basis: 100%;
+   margin: 20px;
 }
  }
