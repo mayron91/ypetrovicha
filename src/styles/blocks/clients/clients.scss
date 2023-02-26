@@ -343,4 +343,20 @@ color: #5B9DFF;
         font-size: 12px;
         line-height: 14px;}
 }
+.clients_statistic_about_us_wrapper {
+    flex-wrap: wrap;
+}
+.clients_statistic_about_us_item {
+    flex-basis: 48%;
+}
+.clients_statistic_about_us_item_wapper {
+    h2 {
+        font-size: 30px;
+line-height: 37px;
+    }
+    p {
+        font-size: 14px;
+line-height: 16px;
+    }
+}
  }
