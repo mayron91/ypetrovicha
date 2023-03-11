@@ -293,3 +293,129 @@ line-height: 19px;
 color: #6D7487;
 margin-top: 40px;
 }
+.white_text {
+    color: #fff;
+}
+/*mobile*/
+
+
+@media ( min-width: 350px) and (max-width: 1250px) {
+    .clients_catalog_banner_wripper {
+        justify-content: flex-end;
+        position: relative;
+        h1 {
+            font-size: 18px;
+line-height: 22px;
+position: absolute;
+top: 50%;
+max-height: 50px;
+        }
+        ul {
+            position: absolute;
+            top: 70%;
+height: auto;
+left: 0px;
+            li {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+.clients_service__benefits {
+    h2 {
+        margin-top: 70px;
+        font-size: 22px;
+line-height: 26px;
+    }
+}
+
+.clients_benefits__item {
+    flex-basis: 46% !important;
+    margin: 10px 2%;
+    padding: 0;
+}
+.clients_benefits__content {
+    h3 {
+        width: 100%;
+        font-size: 13px;
+line-height: 17px;
+color: #5B9DFF;
+    }
+    p {width: 100%;
+        font-size: 12px;
+        line-height: 14px;}
+}
+.clients_statistic_about_us_wrapper {
+    flex-wrap: wrap;
+}
+.clients_statistic_about_us_item {
+    flex-basis: 48%;
+}
+.clients_statistic_about_us_item_wapper {
+    h2 {
+        font-size: 30px;
+line-height: 37px;
+    }
+    p {
+        font-size: 14px;
+line-height: 16px;
+    }
+}
+.clients_call_form_wrapper {
+    flex-wrap: wrap;
+    img {
+        margin: 30px 20px;
+        max-width: 52px;
+        max-height: 52px;
+    }
+    h3 {
+        width: 75%;
+        font-size: 16px;
+line-height: 18px;
+    }
+}
+.clients_call_form_container {
+   flex-direction: column;
+   flex-basis: 100%;
+   margin: 20px;
+}
+.contact_form_title {
+    min-height: 100px;
+    h2 {
+        font-size: 20px;
+line-height: 24px;
+    }
+}
+.contact_form_input_wrapper {
+    flex-direction: column;
+    h3 {
+        font-size: 16px;
+line-height: 18px;
+    }
+}
+.contact_form_input_item_wripper {
+    width: 100%;
+    p {
+        width: 100%;
+    }
+    input {
+        min-width: 280px;
+    }
+}
+.our_works_mob_btn {
+    border: 1px solid #FFFFFF;
+border-radius: 4px;
+color: #fff;
+font-size: 16px;
+line-height: 19px;
+}
+.how_to_get_text {
+    background-color: transparent;
+    p {
+        color: #fff;
+    }
+}
+.white_text {
+    color: #fff !important;
+}
+ }
