@@ -34,6 +34,14 @@ color: #C8C8C8;
     color: #C8C8C8;
 }
 
+.img_brands {
+    width:150px;
+}
+
+.swiper-slide-active {
+    transform: scale(1);
+}
+
 
 @media ( min-width: 350px) and (max-width: 800px) {
     .img_clients {
