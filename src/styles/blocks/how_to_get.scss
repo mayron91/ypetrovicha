@@ -11,8 +11,9 @@
     opacity: 0.8;
     color: white;
     min-width: 380px;
-    max-height: 426PX;
+    max-height: 366px;
     padding: 40px 40px;
+    border-radius: 10px 0 0 10px;
     
     & p {
         //padding: 5px 0px;
@@ -35,7 +36,7 @@
     
     & p {
         padding: 5px 0px;
-        margin-bottom: 30px 
+        margin-bottom: 30px;
     }
 
     & a {
@@ -51,6 +52,7 @@
     img {
         width: 100%;
         object-fit: cover;
+        min-height: 366px;
     }
 }
 
@@ -66,14 +68,14 @@
 @media ( min-width: 350px) and (max-width: 800px) {
    .how_to_get_text {
     background: #FFFFFF;
-    
+    padding: 20px 0 20px 0;
     p {
-        display: flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     color: #000000;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     img {
         width: 15px;
         height: 15px;

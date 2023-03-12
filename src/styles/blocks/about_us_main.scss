@@ -5,9 +5,11 @@
 .about_us_inner {
     width: 100%;
     background: url("../img/main_car.jpg") no-repeat;
+    min-height: auto;
     background-size: 100%;
     display: flex;
     flex-direction: row;
+    border-radius: 10px;
 }
 
 .about_text {
@@ -15,8 +17,9 @@
     opacity: 0.8;
     color: white;
     width: 35%;
-    height: 550PX;
+    min-height:400px;
     padding: 60px 40px;
+    border-radius: 10px 0 0 10px;
     & p {
         padding: 25px 0px;
         margin-bottom: 30px 

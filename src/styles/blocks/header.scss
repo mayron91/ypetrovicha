@@ -64,7 +64,7 @@
 
 .phone::before {
     content: url("../img/phone.svg");
-    margin: 0 5px 0 0;
+    margin: 5px 5px 0 0;
 }
 .header__nav__btn {
     border: 1px solid #35393F;
@@ -97,7 +97,9 @@
 }
 .phone::before {
     content: url("../img/phone_black.svg");
-    margin: 0 5px 0 0;
+    margin: 0 10px 0 0;
+    position: relative;
+    top: 4px;
 }
 .header__nav__btn_black {
     border: 1px solid #D1D1D1;

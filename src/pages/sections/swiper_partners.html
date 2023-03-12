@@ -30,6 +30,18 @@
      centeredSlides: true,
      slidesPerView: 5,
      initialSlide: 2,
+     breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 3,
+      spaceBetween: 1
+    },
+    // when window width is >= 640px
+    840: {
+      slidesPerView: 5,
+      spaceBetween: 5
+    }
+  },
      direction: getDirection(),
      navigation: {
        nextEl: '.swiper-button-next',
@@ -48,3 +60,4 @@
      return direction;
    }
  </script>
+
