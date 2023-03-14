@@ -167,6 +167,15 @@ openMobileMenuBtn.addEventListener("click", () => {
             }
         });
 </script> 
+<script>
+  $(window).scroll(function(){
+            if($(this).scrollTop() > 100){
+                $('.mobile_header_wrapper_inner').addClass('sticky_mob')
+            } else{
+                $('.mobile_header_wrapper_inner').removeClass('sticky_mob')
+            }
+        });
+</script> 
 <!--show logo nav-->
 <script>
   $(window).scroll(function(){
@@ -177,6 +186,7 @@ openMobileMenuBtn.addEventListener("click", () => {
             }
         });
 </script> 
+
 <!--hidden btn nav-->
 <script>
   $(window).scroll(function(){
@@ -184,6 +194,15 @@ openMobileMenuBtn.addEventListener("click", () => {
                 $('.header__nav__btn').addClass('hidden')
             } else{
                 $('.header__nav__btn').removeClass('hidden')
+            }
+        });
+</script> 
+<script>
+  $(window).scroll(function(){
+            if($(this).scrollTop() > 100){
+                $('.mobile_header_wrapper_inner_tel').addClass('hidden')
+            } else{
+                $('.mobile_header_wrapper_inner_tel').removeClass('hidden')
             }
         });
 </script> 
