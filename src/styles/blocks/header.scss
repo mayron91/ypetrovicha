@@ -169,6 +169,16 @@ border-radius: 4px;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      padding: 0 10px;
+      position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+   background: #fff;
+   width: 100%;
+   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
+   
       img {
         width: 40%;
         margin: 15px 0;
@@ -199,9 +209,9 @@ border-radius: 4px;
 {
   display: block;
   width: 40px;
-  height: 32px;
+  height: 40px;
   position: absolute;
-  top: 17px;
+  top: 34px;
   cursor: pointer;
   opacity: 0; /* hide this */
   z-index: 10; /* and place it over the hamburger */
@@ -358,25 +368,29 @@ line-height: 19px;
     width: 100% !important;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
 }
-.sticky_mob{
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    right: 20px;
-    margin: 0;
-    top: 5px;
-    z-index: 999;
-   background: #fff;
-   min-width: 35px;
-   min-height: 35px;
-   border-radius: 5px;
-   opacity: 0.9;
-   
-}
+
 .hidden {
     display: none !important;
 }
 .show {
     display: block !important;
+}
+@media ( min-width: 550px) and (max-width: 1225px) {
+    #menuToggle span
+{
+  display: block;
+  top: 17px;
+  width: 40px;
+  height: 1px;
+  margin-bottom: 15px;
+  transform-origin: -2px 2px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+.mobile_header_wrapper_inner img {
+    width: 34px;
+    height: 34px;
+}
 }
