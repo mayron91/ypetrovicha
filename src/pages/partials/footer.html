@@ -157,40 +157,33 @@ openMobileMenuBtn.addEventListener("click", () => {
 
 </script>
 
-<!--fixed header-->
+<!--stycky header-->
 <script>
-  // The header is hidden when you scroll down the page
-var scrollStatus,
-    scrollTopStatus = 0,
-    header = $('.header__nav'),
-    headerHeight = header.outerHeight();
-    $('.header__nav').css("visibility","hidden");
-
-$(window).scroll(function(e){
-    scrollStatus = true;
-});
-
-setInterval(function() {
-    if (scrollStatus) {
-        scrollActive();
-        scrollStatus = false;
-    }
-}, 250);
-
-function scrollActive() {
-    var scrollPos = $(this).scrollTop();
-
-    if(Math.abs(scrollTopStatus - scrollPos) <= 5)
-        return;
-
-    if (scrollPos > scrollTopStatus && scrollPos > headerHeight) {
-        header.css("top", "-" + headerHeight + "px");
-    } else {
-        if(scrollPos + $(window).height() < $(document).height()) $('.header__nav').css("visibility","visible");{
-            header.css("top", "0px");
-        }
-    }
-
-    scrollTopStatus = scrollPos;
-}
-</script> -->
+  $(window).scroll(function(){
+            if($(this).scrollTop() > 100){
+                $('.header__nav_top').addClass('sticky')
+            } else{
+                $('.header__nav_top').removeClass('sticky')
+            }
+        });
+</script> 
+<!--show logo nav-->
+<script>
+  $(window).scroll(function(){
+            if($(this).scrollTop() > 100){
+                $('.logo').addClass('show')
+            } else{
+                $('.logo').removeClass('show')
+            }
+        });
+</script> 
+<!--hidden btn nav-->
+<script>
+  $(window).scroll(function(){
+            if($(this).scrollTop() > 100){
+                $('.header__nav__btn').addClass('hidden')
+            } else{
+                $('.header__nav__btn').removeClass('hidden')
+            }
+        });
+</script> 
