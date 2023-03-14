@@ -8,7 +8,7 @@
         width: 35%;
         position: absolute;
         top: 10%;
-        left: 5%;
+        margin-left: 5%;
         font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
@@ -579,6 +579,7 @@ color: #000000;
     }
 }
 /*mobile*/
+
 @media ( min-width: 350px) and (max-width: 800px) {
     .statistic_about_us_wrapper {
         flex-wrap: wrap;
@@ -705,4 +706,14 @@ line-height: 24px;
     .about_us_map {
         width: 100%;
     }
+    .service__banner {
+        h1 {
+            top: 20% !important;
+        }
+    }
  }
+ @media ( min-width: 550px) and (max-width: 800px) {
+    .right {
+        margin-top: 20%;
+    }
+}

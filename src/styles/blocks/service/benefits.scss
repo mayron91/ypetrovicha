@@ -52,7 +52,7 @@ line-height: 21px;
 /*mobile*/
 
 
-@media ( min-width: 350px) and (max-width: 1250px) {
+@media ( min-width: 350px) and (max-width: 800px) {
     .service__benefits {
         h2 {
             font-size: 20px;
@@ -79,5 +79,10 @@ color: #003D9E !important;
 font-size: 14px;
 line-height: 16px;
         }
+    }
+ }
+ @media ( min-width: 550px) and (max-width: 800px) {
+    .benefits__item {
+        width: 30%;
     }
  }

@@ -273,4 +273,9 @@ align-items: center;
 color: #000000;
         }
     }
+}
+ @media ( min-width: 550px) and (max-width: 800px) {
+    .member_reviews_slider_item {
+        width: 50% !important;
+    }
  }
