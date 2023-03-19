@@ -1,63 +1,21 @@
 <section class="swiper-sec">
     <div class="container">
         <h2 class="h2">Наши партнеры и клиенты</h2>
-        <div class="swiper">
+        <div class="swiper swiper-partners">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="/img/clients/1.png" alt="" class="img_partners"></div>
-              <div class="swiper-slide"><img src="/img/clients/2.png" alt="" class="img_partners"></div>
-              <div class="swiper-slide"><img src="/img/clients/3.png" alt="" class="img_partners"></div>
-              <div class="swiper-slide"><img src="/img/clients/4.png" alt="" class="img_partners"></div>
-              <div class="swiper-slide"><img src="/img/clients/5.png" alt="" class="img_partners"></div>
-              <div class="swiper-slide"><img src="/img/clients/1.png" alt="" class="img_partners"></div>
-              <div class="swiper-slide"><img src="/img/clients/2.png" alt="" class="img_partners"></div>
-              <div class="swiper-slide"><img src="/img/clients/3.png" alt="" class="img_partners"></div>
-              <div class="swiper-slide"><img src="/img/clients/4.png" alt="" class="img_partners"></div>
-              <div class="swiper-slide"><img src="/img/clients/5.png" alt="" class="img_partners"></div>
+              <div class="swiper-slide part-lc"><img src="/img/clients/1.png" alt="" class="img_partners"></div>
+              <div class="swiper-slide part-lc"><img src="/img/clients/2.png" alt="" class="img_partners"></div>
+              <div class="swiper-slide part-lc"><img src="/img/clients/3.png" alt="" class="img_partners"></div>
+              <div class="swiper-slide part-lc"><img src="/img/clients/4.png" alt="" class="img_partners"></div>
+              <div class="swiper-slide part-lc"><img src="/img/clients/5.png" alt="" class="img_partners"></div>
+              <div class="swiper-slide part-lc"><img src="/img/clients/1.png" alt="" class="img_partners"></div>
+              <div class="swiper-slide part-lc"><img src="/img/clients/2.png" alt="" class="img_partners"></div>
+              <div class="swiper-slide part-lc"><img src="/img/clients/3.png" alt="" class="img_partners"></div>
+              <div class="swiper-slide part-lc"><img src="/img/clients/4.png" alt="" class="img_partners"></div>
+              <div class="swiper-slide part-lc"><img src="/img/clients/5.png" alt="" class="img_partners"></div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
     </div>
 </section>
-
- <!-- Swiper JS -->
- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
- <!-- Initialize Swiper -->
- <script>
-   var swiper = new Swiper('.swiper', {
-     loop: true,
-     centeredSlides: true,
-     slidesPerView: 5,
-     initialSlide: 2,
-     breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 3,
-      spaceBetween: 3,
-      initialSlide: 1
-    },
-    // when window width is >= 640px
-    840: {
-      slidesPerView: 5,
-      spaceBetween: 5
-    }
-  },
-     direction: getDirection(),
-     navigation: {
-       nextEl: '.swiper-button-next',
-       prevEl: '.swiper-button-prev',
-     },
-     on: {
-       resize: function () {
-         swiper.changeDirection(getDirection());
-       },
-     },
-   });
-
-   function getDirection() {
-     var windowWidth = window.innerWidth;
-     var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-     return direction;
-   }
- </script>

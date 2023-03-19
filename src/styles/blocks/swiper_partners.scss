@@ -51,3 +51,14 @@ color: #C8C8C8;
     transform: scale(1);
 }
 
+@media ( min-width: 350px) and (max-width: 800px) {
+    .partners-sl {
+       width: 90px !important;
+   }
+    .img_partners {
+       width: 80px;
+       }
+       .swiper-partners {
+           padding-left: 3.75rem;
+       }
+    }

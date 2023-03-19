@@ -8,7 +8,6 @@
     font-size: 18px;
     background: #fff;
     min-height: 180px;
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -43,7 +42,7 @@ color: #C8C8C8;
 }
 
 
-@media ( min-width: 350px) and (max-width: 800px) {
+@media ( min-width: 350px) and (max-width: 500px) {
     .img_clients {
         width: 100px;
     }
@@ -61,4 +60,15 @@ color: #C8C8C8;
     .index_swiper_brands_mob {
         margin: 40px 0 0 0;
     }
+    .swiper-brands {
+        padding-left: 20px;
+    }
+    
+    .brands-sl {
+        width: 90px !important;
+    }
+    .img_brands {
+        width: 80px;
+    }
+
 }
