@@ -33,14 +33,13 @@
 }
 
 .header_nav_top_wrapper {
-    min-height: 70px;
+    min-height: 35px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     max-width: 1538px + 80px;
     margin: 0 auto;
-    padding: 0 40px;
     ul {
         list-style-type: none;
         margin: 0;
@@ -68,7 +67,6 @@
 .phone {
     font-size: 22px;
     font-weight: bold;
-    padding-right: 30px;
 }
 
 .phone::before {
@@ -94,7 +92,7 @@
     text-align: center;
     padding: 8px 20px;
     font-size: 14px;
-    
+    margin-left: 40px;
 }
 /*black theme*/
 .black {
@@ -157,19 +155,13 @@ border-radius: 4px;
         display: none;
     }
     .mobile_header_wrapper {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 10px;
-      position: fixed;
-    top:0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-   background: #fff;
-   width: 100%;
-   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
+        min-height: 35px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1538px + 80px;
+        margin: 0 auto;
    
       img {
         width: 40%;
@@ -342,6 +334,21 @@ line-height: 19px;
     font-size: 14px;
     margin: 20px auto;
 }
+.sticky{
+    position: fixed;
+    top: -10px;
+    left: 0;
+    z-index: 999;
+    min-height: 35px !important;
+    width: 100% !important;
+    background: #fff;
+   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
+}
+}
+.menuToggle_black {
+    span {
+        background: #fff !important;
+    }
 }
 /*stycky header*/
 
@@ -351,8 +358,8 @@ line-height: 19px;
     top: -10px;
     left: 0;
     z-index: 999;
-    
-    min-height: 70px;
+    padding: 0 40px;
+    min-height: 35px !important;
     width: 100% !important;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
 }
@@ -377,6 +384,7 @@ line-height: 19px;
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
 }
+
 .mobile_header_wrapper_inner img {
     width: 34px;
     height: 34px;

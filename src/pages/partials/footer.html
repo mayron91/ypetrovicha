@@ -169,6 +169,15 @@ openMobileMenuBtn.addEventListener("click", () => {
             }
         });
 </script> 
+<script>
+  $(window).scroll(function(){
+            if($(this).scrollTop() > 100){
+                $('.mobile_header_wrapper').addClass('sticky')
+            } else{
+                $('.mobile_header_wrapper').removeClass('sticky')
+            }
+        });
+</script> 
 
 <!--show logo nav-->
 <script>
