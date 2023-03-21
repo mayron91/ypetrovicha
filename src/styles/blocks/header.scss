@@ -144,7 +144,9 @@ border-radius: 4px;
 }
 /*mobile version*/
 @media ( min-width: 350px) and (max-width: 1225px) {
-
+    .mobile_header_fix_black {
+        background: #101015 !important;
+    }
     .header__top__item {
         display: none;
     }
@@ -413,7 +415,4 @@ line-height: 19px;
 }
 .paddmob {
     padding: 0 20px !important;
-}
-.mobile_header_fix_black {
-    background: #101015 !important;
 }
