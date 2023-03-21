@@ -33,7 +33,7 @@
 }
 
 .header_nav_top_wrapper {
-    min-height: 35px;
+    min-height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -90,7 +90,7 @@
     min-width: 160px;
     height: 30px;
     text-align: center;
-    padding: 8px 20px;
+    padding: 8px 0 8px 20px;
     font-size: 14px;
     margin-left: 40px;
 }
@@ -160,9 +160,7 @@ border-radius: 4px;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        max-width: 1538px + 80px;
         margin: 0 auto;
-   
       img {
         width: 40%;
         margin: 15px 0;
@@ -358,7 +356,6 @@ line-height: 19px;
     top: -10px;
     left: 0;
     z-index: 999;
-    padding: 0 40px;
     min-height: 35px !important;
     width: 100% !important;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
@@ -389,4 +386,34 @@ line-height: 19px;
     width: 34px;
     height: 34px;
 }
+
+}
+.container_nopadd {
+    max-width: 1538px + 80px;
+    margin: 0 auto;
+    padding: 0;
+    transition: $base-transition;
+    @include respond-to('medium') {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.container_nopaddmob {
+    max-width: 1538px + 80px;
+    margin: 0 auto;
+    padding: 0 !important;
+    transition: $base-transition;
+    @include respond-to('medium') {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.padd {
+    padding: 0 40px !important;
+}
+.paddmob {
+    padding: 0 20px !important;
+}
+.mobile_header_fix_black {
+    background: #101015 !important;
 }

@@ -16,26 +16,30 @@
             </div>
         </div>
        <nav class="header__nav_top" style="transition: all 0.5s ease;">
-        <div class="header_nav_top_wrapper">
-            <a href="/" class="logo hidden">
-                <img src="img/logo.svg" alt="" class="logo__img">
-            </a>
-                <ul>
-                    <li class="active"><a href="#">Услуги</a></li>
-                    <li><a href="#">Запчасти</a></li>
-                    <li><a href="#">Юридическим лицам</a></li>
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Работа у нас</a></li>
-                </ul>
-                <div class="header_contacts">
-                    <a href="tel:{{ vars.phone | toTel }}" class="phone">{{ vars.phone }}</a>
-                    <a href="#" class="header__nav__btn">Обратный звонок</a>
-                    </div>
+        <div class="container_nopadd">
+            <div class="header_nav_top_wrapper">
+                <a href="/" class="logo hidden">
+                    <img src="img/logo.svg" alt="" class="logo__img">
+                </a>
+                    <ul>
+                        <li class="active"><a href="#">Услуги</a></li>
+                        <li><a href="#">Запчасти</a></li>
+                        <li><a href="#">Юридическим лицам</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Работа у нас</a></li>
+                    </ul>
+                    <div class="header_contacts">
+                        <a href="tel:{{ vars.phone | toTel }}" class="phone">{{ vars.phone }}</a>
+                        <a href="#" class="header__nav__btn">Обратный звонок</a>
+                        </div>
+            </div>
         </div>
         
+        
         </nav> 
-       
-        <div class="mobile_header_wrapper">
+        
+        <div class="mobile_header_fix">
+            <div class="container_nopaddmob mobile_header_wrapper">
             <img src="img/logo.svg" alt="">
             <div class="mobile_header_wrapper_inner">
                 <a href="tel:{{ vars.phone | toTel }}" class="mobile_header_wrapper_inner_tel"><img src="img/phone_mob_header.svg" alt=""></a>
@@ -65,6 +69,7 @@
                   </nav>
             </div>
             
+    </div>
     </div>
     </div>
     

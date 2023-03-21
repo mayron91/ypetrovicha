@@ -172,9 +172,27 @@ openMobileMenuBtn.addEventListener("click", () => {
 <script>
   $(window).scroll(function(){
             if($(this).scrollTop() > 100){
-                $('.mobile_header_wrapper').addClass('sticky')
+                $('.container_nopadd').addClass('padd')
             } else{
-                $('.mobile_header_wrapper').removeClass('sticky')
+                $('.container_nopadd').removeClass('padd')
+            }
+        });
+</script>
+<script>
+  $(window).scroll(function(){
+            if($(this).scrollTop() > 100){
+                $('.container_nopaddmob').addClass('paddmob')
+            } else{
+                $('.container_nopaddmob').removeClass('paddmob')
+            }
+        });
+</script>  
+<script>
+  $(window).scroll(function(){
+            if($(this).scrollTop() > 100){
+                $('.mobile_header_fix').addClass('sticky')
+            } else{
+                $('.mobile_header_fix').removeClass('sticky')
             }
         });
 </script> 
