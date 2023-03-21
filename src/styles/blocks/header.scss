@@ -33,7 +33,7 @@
 }
 
 .header_nav_top_wrapper {
-    min-height: 50px;
+    min-height: 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -337,10 +337,10 @@ line-height: 19px;
     top: -10px;
     left: 0;
     z-index: 999;
-    min-height: 35px !important;
+    min-height: 80px !important;
     width: 100% !important;
     background: #fff;
-   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
 }
 }
 .menuToggle_black {
@@ -356,7 +356,7 @@ line-height: 19px;
     top: -10px;
     left: 0;
     z-index: 999;
-    min-height: 35px !important;
+    min-height: 80px !important;
     width: 100% !important;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
 }
