@@ -10,8 +10,9 @@
     margin: 30px 0;
 }
 .footer_contacts_wrapper {
-    width: 20%;
+    width: 30%;
     display: flex;
+    margin-right: 10%;
     flex-direction: column;
     color: #DBDBDB;
     font-family: 'Roboto';
@@ -75,7 +76,7 @@ line-height: 16px;
     height: 22px; 
 }
 .footer_enroll {
-    width: 30%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -83,6 +84,7 @@ line-height: 16px;
 }
 .footer_services_wrapper {
     width: 50%;
+    margin-left: 10%;
     p {
         font-family: 'Montserrat';
 font-style: normal;
