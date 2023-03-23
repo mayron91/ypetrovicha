@@ -160,11 +160,8 @@ border-radius: 4px;
     .mobile_header_wrapper {
         min-height: 70px;
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
-        margin: 0 auto;
       img {
         width: 50%;
       }
@@ -172,12 +169,10 @@ border-radius: 4px;
     .mobile_header_wrapper_inner {
         display: flex;
         flex-direction: row;
-        align-items: center;
         img {
             width: 28px;
             height: 28px;
             margin-right: 35px;
-            align-self: center;
         }
     }
     
@@ -185,10 +180,10 @@ border-radius: 4px;
     #menuToggle
 {
   display: block;
-  top: 50px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
+  margin-top: 5px;
 }
 
 #menuToggle input
@@ -334,10 +329,11 @@ line-height: 19px;
     font-size: 14px;
     margin: 20px auto;
 }
-.sticky{
+.stickymob{
     position: fixed;
-    top: -10px;
+    display: flex;
     left: 0;
+    top: -2px;
     z-index: 999;
     min-height: 80px !important;
     width: 100% !important;
