@@ -39,35 +39,38 @@
         </nav> 
         
         <div class="mobile_header_fix">
-            <div class="container_nopaddmob mobile_header_wrapper">
-            <img src="img/logo.svg" alt="">
-            <div class="mobile_header_wrapper_inner">
-                <a href="tel:{{ vars.phone | toTel }}" class="mobile_header_wrapper_inner_tel"><img src="img/phone_mob_header.svg" alt=""></a>
-                <nav role="navigation">
-                    <div id="menuToggle">
-                      <input type="checkbox" />
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <ul id="menu">
-                        <a href="#"><li>Услуги</li></a>
-                        <a href="#"><li>Запчасти</li></a>
-                        <a href="#"><li>Юридическим лицам</li></a>
-                        <a href="#"><li>О компании</li></a>
-                        <a href="#"><li>Работа у нас</li></a>
-                      </br>
-                    </br>
-                        <a href="tel:{{ vars.phone | toTel }}" class="mobile_menu_tel">{{ vars.phone }}</a>
-                        <div class="header_item_mob header__flag">
-                            <address>{{ vars.address }}</address>
-                        </div></address>
-                        <div class="header_item_mob header__time">Пн-Пт: 08:00 - 19:00, </br>Сб: 08:00 - 17:00, Вс: выходной</div>
-                        <div class="header_item_mob header__mail"><a href="tel:" class="mail">{{ vars.email }}</a></div>
-                        <a href="#" class="mob_menu_btn">Обратный звонок</a>
-                    </ul>
+            <div class="container_nopaddmob">
+                <div class="mobile_header_wrapper">
+                    <img src="img/logo.svg" alt="">
+                    <div class="mobile_header_wrapper_inner">
+                        <a href="tel:{{ vars.phone | toTel }}" class="mobile_header_wrapper_inner_tel"><img src="img/phone_mob_header.svg" alt=""></a>
+                        <nav role="navigation">
+                            <div id="menuToggle">
+                              <input type="checkbox" />
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <ul id="menu">
+                                <a href="#"><li>Услуги</li></a>
+                                <a href="#"><li>Запчасти</li></a>
+                                <a href="#"><li>Юридическим лицам</li></a>
+                                <a href="#"><li>О компании</li></a>
+                                <a href="#"><li>Работа у нас</li></a>
+                              </br>
+                            </br>
+                                <a href="tel:{{ vars.phone | toTel }}" class="mobile_menu_tel">{{ vars.phone }}</a>
+                                <div class="header_item_mob header__flag">
+                                    <address>{{ vars.address }}</address>
+                                </div></address>
+                                <div class="header_item_mob header__time">Пн-Пт: 08:00 - 19:00, </br>Сб: 08:00 - 17:00, Вс: выходной</div>
+                                <div class="header_item_mob header__mail"><a href="tel:" class="mail">{{ vars.email }}</a></div>
+                                <a href="#" class="mob_menu_btn">Обратный звонок</a>
+                            </ul>
+                            </div>
+                          </nav>
                     </div>
-                  </nav>
-            </div>
+                </div>
+            
             
     </div>
     </div>
