@@ -1,10 +1,3 @@
-import { initPhoneMask } from './utils/functions';
-
-
-document.addEventListener('DOMContentLoaded', function(){
-    $('form').parsley();
-    initPhoneMask();
-});
 
 var swiper = new Swiper('.swiper-brands', {
     loop: true,
@@ -82,4 +75,65 @@ var swiper = new Swiper('.swiper-brands', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+  });
+
+  var swiper = new Swiper('.swiper-members', {
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 3,
+    initialSlide: 0,
+    breakpoints: {
+   320: {
+     slidesPerView: 1,
+     spaceBetween: 25,
+   },
+   800: {
+     slidesPerView: 3,
+     spaceBetween: 50,
+   },
+    1000: {
+     slidesPerView: 3,
+     spaceBetween: 50
+   },
+ },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  var swiper = new Swiper('.swiper-brigada', {
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 3,
+    initialSlide: 0,
+    breakpoints: {
+   320: {
+     slidesPerView: 3,
+     spaceBetween: 5,
+   },
+   800: {
+     slidesPerView: 3,
+     spaceBetween: 50,
+   },
+    1000: {
+     slidesPerView: 3,
+     spaceBetween: 50
+   },
+ },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+
+  var swiper3 = new Swiper('#swiper-member', {
+    loop: true,
+    slidesPerView: 5,
+    initialSlide: none,
+    navigation: {
+      nextEl: '.swiper-button-next-member',
+      prevEl: '.swiper-button-prev-member',
+    }
   });

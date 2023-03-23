@@ -116,33 +116,7 @@ var swiper2 = new Swiper('#swiper-services', {
       return direction;
     }
  </script>
-
-    <!-- Initialize Swiper -->
- <script>
-var swiper3 = new Swiper('#swiper-member', {
-      loop: true,
-      centeredSlides: true,
-      slidesPerView: 5,
-      initialSlide: 2,
-      direction: getDirection(),
-      navigation: {
-        nextEl: '.swiper-button-next-member',
-        prevEl: '.swiper-button-prev-member',
-      },
-      on: {
-        resize: function () {
-          swiper.changeDirection(getDirection());
-        },
-      },
-    });
  
-    function getDirection() {
-      var windowWidth = window.innerWidth;
-      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-      return direction;
-    }
- </script>
-
 <script>
 	const openMobileMenuBtn = document.querySelector(".device-menu");
 const headerMenu = document.querySelector(".header-nav");
