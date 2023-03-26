@@ -127,8 +127,81 @@ var swiper = new Swiper('.swiper-brands', {
     },
   });
 
+  var swiper3 = new Swiper('.swiper_about_us_team_first', {
+    loop: true,
+    slidesPerView: 5,
+    initialSlide: none,
+    navigation: {
+      nextEl: '.swiper-button-next-member',
+      prevEl: '.swiper-button-prev-member',
+    }
+  });
+  var swiper3 = new Swiper('.swiper_about_us_team_masters', {
+    loop: true,
+    slidesPerView: 5,
+    initialSlide: none,
+    navigation: {
+      nextEl: '.swiper-button-next-member',
+      prevEl: '.swiper-button-prev-member',
+    }
+  });
 
-  var swiper3 = new Swiper('#swiper-member', {
+  var swiper3 = new Swiper('.swiper_service_service_slider_sop', {
+    loop: true,
+    slidesPerView: 5,
+    initialSlide: none,
+    navigation: {
+      nextEl: '.swiper-button-next-member',
+      prevEl: '.swiper-button-prev-member',
+    }
+  });
+  var swiper3 = new Swiper('.swiper_service_service_slider_sop2', {
+    loop: true,
+    slidesPerView: 5,
+    initialSlide: none,
+    navigation: {
+      nextEl: '.swiper-button-next-member',
+      prevEl: '.swiper-button-prev-member',
+    }
+  });
+
+  var swiper3 = new Swiper('.swiper_team_team_swiper_owners', {
+    loop: true,
+    slidesPerView: 5,
+    initialSlide: none,
+    navigation: {
+      nextEl: '.swiper-button-next-member',
+      prevEl: '.swiper-button-prev-member',
+    }
+  });
+  var swiper3 = new Swiper('.swiper_team_team_swiper_sles', {
+    loop: true,
+    slidesPerView: 5,
+    initialSlide: none,
+    navigation: {
+      nextEl: '.swiper-button-next-member',
+      prevEl: '.swiper-button-prev-member',
+    }
+  });
+  var swiper3 = new Swiper('.swiper_team_team_swiper_kuz', {
+    loop: true,
+    slidesPerView: 5,
+    initialSlide: none,
+    navigation: {
+      nextEl: '.swiper-button-next-member',
+      prevEl: '.swiper-button-prev-member',
+    }
+  });
+  var swiper3 = new Swiper('.swiper_team_team_swiper_prz', {
+    loop: true,
+    slidesPerView: 5,
+    initialSlide: none,
+    navigation: {
+      nextEl: '.swiper-button-next-member',
+      prevEl: '.swiper-button-prev-member',
+    }
+  });
+  var swiper3 = new Swiper('.swiper_team_team_swiper_zip', {
     loop: true,
     slidesPerView: 5,
     initialSlide: none,
