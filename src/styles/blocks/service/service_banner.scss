@@ -29,13 +29,13 @@
 /*mobile*/
 
 
-@media ( min-width: 350px) and (max-width: 800px) {
+@media ( min-width: 320px) and (max-width: 800px) {
     .service_banner_wrapper {
-        
+        margin-top: 20px;
         h1 {
             font-size: 20px;
 line-height: 24px;
-top: 50%;
+margin-top: 20%;
         left: 1%;
         }
     }

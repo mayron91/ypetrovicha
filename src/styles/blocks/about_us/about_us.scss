@@ -580,16 +580,18 @@ color: #000000;
 }
 /*mobile*/
 
-@media ( min-width: 350px) and (max-width: 800px) {
+@media ( min-width: 320px) and (max-width: 800px) {
     .statistic_about_us_wrapper {
         flex-wrap: wrap;
+        margin: 0;
+        padding-top: 50px;
     }
     .statistic_about_us_item {
         width: 50%;
     }
     .statistic_about_us_item_wapper {
         h2 {
-            font-size: 30px;
+            font-size: 34px;
 line-height: 37px;
         }
     }
@@ -686,9 +688,10 @@ color: #003D9E;
         font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
-font-size: 20px;
+font-size: 24px;
 line-height: 24px;
 color: #000000;
+margin-top: 70px;
     }
     .about_us_contacts_wrapper {
         flex-direction: column;
@@ -709,6 +712,7 @@ line-height: 24px;
     .service__banner {
         h1 {
             top: 20% !important;
+            width: 60%;
         }
     }
  }

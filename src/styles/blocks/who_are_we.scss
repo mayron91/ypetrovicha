@@ -38,19 +38,21 @@ color: #000000;
     img {
         width: 46%;
         margin: 2%;
+        max-height: 110px;
     }
 }
 /*Mobile*/
-@media ( min-width: 350px) and (max-width: 800px) {
+@media ( min-width: 320px) and (max-width: 800px) {
     .aboutus_who_are_we_wrapper {
+        margin-top: 75px;
         h2 {
             font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
-font-size: 20px;
+font-size: 24px;
 line-height: 23px;
 color: #000000;
-margin-top: 140px;
+
         }
     }
     .who_are_we_content_wrapper {
@@ -59,9 +61,10 @@ margin-top: 140px;
     }
     .who_are_we_text {
         width: 100%;
-        padding: 0 10px;
+        padding: 10px 10px;
     }
     .who_are_we_img {
+        margin-top: 20px;
         width: 100%;
     }
  }
