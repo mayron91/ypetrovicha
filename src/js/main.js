@@ -136,6 +136,7 @@ var swiper = new Swiper('.swiper-brands', {
       prevEl: '.swiper-button-prev-member',
     }
   });
+  
   var swiper3 = new Swiper('.swiper_about_us_team_masters', {
     loop: true,
     slidesPerView: 5,
