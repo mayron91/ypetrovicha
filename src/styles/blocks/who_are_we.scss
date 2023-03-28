@@ -38,7 +38,6 @@ color: #000000;
     img {
         width: 46%;
         margin: 2%;
-        max-height: 110px;
     }
 }
 /*Mobile*/
@@ -66,5 +65,10 @@ color: #000000;
     .who_are_we_img {
         margin-top: 20px;
         width: 100%;
+    }
+    .who_are_we_img {
+        img {
+            max-height: 110px;
+        }
     }
  }

@@ -581,6 +581,50 @@ color: #000000;
 /*mobile*/
 
 @media ( min-width: 320px) and (max-width: 800px) {
+    
+    .about_us_contacts_wrapper {
+        flex-direction: column;
+        background: transparent;
+    box-shadow: none;
+    border-radius: 5px;
+    }
+    .about_us_contacts_info {
+        width: 100%;
+        padding: 0;
+        border: transparent;
+        h3 {
+            font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+padding-top: 50px;
+        }
+    }
+    .about_us_map {
+        width: 100%;
+    }
+    .our_works_mobile {
+        margin-top: 50px;
+        h2 {
+            font-size: 26px;
+            padding-bottom: 10px;
+        }
+    }
+    .service__banner {
+        h1 {
+            top: 20% !important;
+            width: 60%;
+        }
+    }
+ }
+ @media ( min-width: 320px) and (max-width: 1200px) {
+    .time_line {
+        display: none;
+    }
+    .time_line_mob {
+        display: block !important;
+    }
     .statistic_about_us_wrapper {
         flex-wrap: wrap;
         margin: 0;
@@ -693,32 +737,38 @@ line-height: 24px;
 color: #000000;
 margin-top: 70px;
     }
-    .about_us_contacts_wrapper {
-        flex-direction: column;
+ }
+ @media ( min-width: 800px) and (max-width: 1200px) {
+    .right {
+        margin-top: 15%;
     }
-    .about_us_contacts_info {
-        width: 100%;
-        h3 {
-            font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-        }
-    }
-    .about_us_map {
-        width: 100%;
-    }
+ }
+ @media ( min-width: 320px) and (max-width: 360px) {
     .service__banner {
         h1 {
-            top: 20% !important;
+            top: 0 !important;
             width: 60%;
         }
     }
- }
+}
  @media ( min-width: 550px) and (max-width: 800px) {
     .right {
         margin-top: 20%;
+    }
+
+}
+@media ( min-width: 450px) and (max-width: 800px) {
+    .who_are_we_img {
+        img {
+            max-height: 350px;
+        }
+    }
+}
+@media ( min-width: 800px) and (max-width: 900px)  {
+    .who_are_we_img {
+        img {
+            max-height: 200px;
+        }
     }
 }
 @media ( min-width: 800px) and (max-width: 1200px) {
