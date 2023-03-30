@@ -51,7 +51,7 @@ position: relative;
     a {
         position: absolute;
         z-index: 100;
-        top: 70%;
+        top: 75%;
         left: 5%;
         width: 239px;
 height: 36px;
@@ -304,17 +304,15 @@ margin-top: 40px;
         justify-content: flex-end;
         position: relative;
         h1 {
-            font-size: 18px;
-line-height: 22px;
+            font-size: 38px;
+line-height: 38px;
 position: absolute;
-top: 50%;
 max-height: 50px;
         }
         ul {
             position: absolute;
-            top: 70%;
 height: auto;
-left: 0px;
+left: 5%;
             li {
                 font-size: 14px;
                 line-height: 16px;
@@ -399,7 +397,7 @@ line-height: 18px;
         width: 100%;
     }
     input {
-        min-width: 280px;
+        min-width: 100%;
     }
 }
 .our_works_mob_btn {
@@ -420,10 +418,25 @@ line-height: 19px;
     }
 }
  }
- @media ( min-width: 550px) and (max-width: 1225px) {
+ @media ( min-width: 550px) and (max-width: 1260px) {
     .clients_call_form_wrapper {
         flex-wrap: nowrap;
     }
+    .clients_catalog_banner_wripper {
+        justify-content: flex-end;
+        position: relative;
+        h1 {
+            font-size: 36px;
+line-height: 44px;
+position: absolute;
+max-height: 50px;
+        }
+       
+    }
+    .clients_statistic_about_us_item_wapper h2 {
+        font-size: 48px;
+    }
+   
  }
  .white_text {
     color: #fff !important;
