@@ -34,7 +34,7 @@
         font-size:24px;
     }
 }
-@media ( min-width: 350px) and (max-width: 800px) {
+@media ( min-width: 320px) and (max-width: 800px) {
     .services_wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

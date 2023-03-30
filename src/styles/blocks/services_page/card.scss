@@ -96,7 +96,7 @@ color: #000000;
 /*mobile*/
 
 
-@media ( min-width: 350px) and (max-width: 1250px) {
+@media ( min-width: 320px) and (max-width: 1250px) {
     .card_container_link {
                 display: flex;
             flex-direction: row;
@@ -148,24 +148,24 @@ line-height: 21px;
         align-items: center;  
         p {
             margin: 0; 
-            font-size: 12px;
+            font-size: 16px;
 line-height: 14px;
 color: #C4C4C4;    
         } 
     }
     .like {
-        width: 10px !important;
-        height: 8px;
+        width: 20px !important;
+        height: 16px;
         margin: 0 10px 0 0;
     }
     .answer {
-        width: 8px !important;
-        height: 8px;
+        width: 16px !important;
+        height: 16px;
         margin: 0 10px 0 20px;
     }
     .view {
-        width: 10px !important;
-        height: 8px;
+        width: 20px !important;
+        height: 16px;
         margin: 0 10px 0 20px;
     }
     .mob_data {
