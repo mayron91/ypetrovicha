@@ -76,7 +76,7 @@ color: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
+    margin: 20px 0 100px 0;
 }
 
 .pagination a {
@@ -104,7 +104,7 @@ color: #000000;
             justify-content: center;
                 a {
                     width: 48%;
-                    margin: 22% 1% 10px 1%;
+                    margin: 12% 1% 0px 1%;
                 }
     }
     .card_container {
@@ -173,5 +173,23 @@ color: #C4C4C4;
             font-size: 12px;
 line-height: 14px;
 color: #C4C4C4;
+    }
+ }
+ @media ( min-width: 320px) and (max-width: 400px)
+ {
+    .like {
+        width: 10px !important;
+        height: 8px;
+        margin: 0 10px 0 0;
+    }
+    .answer {
+        width: 8px !important;
+        height: 8px;
+        margin: 0 10px 0 20px;
+    }
+    .view {
+        width: 10px !important;
+        height: 8px;
+        margin: 0 10px 0 20px;
     }
  }
