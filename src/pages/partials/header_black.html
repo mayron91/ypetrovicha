@@ -111,7 +111,7 @@
         
         <div class="mobile_header_fix mobile_header_fix_black">
             <div class="container_nopaddmob mobile_header_wrapper">
-            <img src="img/logo_black.svg" alt="">
+            <img src="img/logo_black.svg" class="mobile_header_logo" alt="">
             <div class="mobile_header_wrapper_inner">
                 <a href="tel:{{ vars.phone | toTel }}" class="mobile_header_wrapper_inner_tel"><img src="img/phone_footer.svg" alt=""></a>
                 <nav role="navigation">
@@ -128,12 +128,12 @@
                         <a href="#"><li>Работа у нас</li></a>
                       </br>
                     </br>
-                        <a href="tel:{{ vars.phone | toTel }}" class="mobile_menu_tel">{{ vars.phone }}</a>
+                        <a href="tel:{{ vars.phone | toTel }}" class="mobile_menu_tel ">{{ vars.phone }}</a>
                         <div class="header_item_mob header__flag">
-                            <address>{{ vars.address }}</address>
+                            <address class="white_text">{{ vars.address }}</address>
                         </div></address>
-                        <div class="header_item_mob header__time">Пн-Пт: 08:00 - 19:00, </br>Сб: 08:00 - 17:00, Вс: выходной</div>
-                        <div class="header_item_mob header__mail"><a href="tel:" class="mail">{{ vars.email }}</a></div>
+                        <div class="header_item_mob header__time white_text">Пн-Пт: 08:00 - 19:00, </br>Сб: 08:00 - 17:00, Вс: выходной</div>
+                        <div class="header_item_mob header__mail white_text"><a href="tel:" class="mail">{{ vars.email }}</a></div>
                         <a href="#" class="mob_menu_btn black">Обратный звонок</a>
                     </ul>
                     </div>

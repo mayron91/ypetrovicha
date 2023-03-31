@@ -249,9 +249,10 @@ color: #000000;
         }
     }
     .member_card_sub_info {
-        width: 100%;
-        margin: 0;
-        padding: 10px;
+        h3 {
+            padding-top: 10px;
+        }
+        
     }
     .work_with_mob_title {
         font-family: 'Montserrat';
