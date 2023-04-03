@@ -302,7 +302,7 @@ margin-top: 40px;
 /*mobile*/
 
 
-@media ( min-width: 320px) and (max-width: 1250px) {
+@media ( min-width: 320px) and (max-width: 1225px) {
     .clients_catalog_banner_wripper {
         justify-content: flex-end;
         position: relative;
@@ -410,8 +410,8 @@ border-radius: 4px;
 font-size: 16px;
 line-height: 19px;
 }
-.how_to_get_text {
-    background-color: transparent;
+.black_back {
+    background-color: transparent !important;
     
 }
 .white_text {
@@ -421,7 +421,7 @@ line-height: 19px;
     }
 }
  }
- @media ( min-width: 550px) and (max-width: 1260px) {
+ @media ( min-width: 550px) and (max-width: 1225px) {
     .clients_call_form_wrapper {
         flex-wrap: nowrap;
     }

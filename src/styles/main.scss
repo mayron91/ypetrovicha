@@ -67,14 +67,27 @@ html, body {
 }
 /*mobile*/
 
-
 @media ( min-width: 320px) and (max-width: 800px) {
-   .not_mob {
-    display: none !important;
-   }
-   .mob {
-    display: block !important;
+    .not_mob {
+     display: none !important;
+    }
+    .mob {
+     display: block !important;
+ }
+ }
+
+@media ( min-width: 320px) and (max-width: 1225px) {
+    .mid {
+        display: block !important;
+    }
+    .not_mid {
+        display: none !important;
+    }
 }
+@media ( min-width: 1225px) {
+    .mid {
+        display: none !important;
+    }
 }
 
 
