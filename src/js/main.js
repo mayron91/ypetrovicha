@@ -129,14 +129,14 @@ var swiper = new Swiper('.swiper-brands', {
 
   var swiper3 = new Swiper('.swiper_about_us_team_first', {
     loop: true,
-    slidesPerView: 5,
-    initialSlide: none,
+    slidesPerView: 3,
+    initialSlide: 1,
     navigation: {
       nextEl: '.swiper-button-next-member',
       prevEl: '.swiper-button-prev-member',
     }
   });
-  
+
   var swiper3 = new Swiper('.swiper_about_us_team_masters', {
     loop: true,
     slidesPerView: 5,
