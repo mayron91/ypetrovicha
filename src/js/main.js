@@ -127,7 +127,7 @@ var swiper = new Swiper('.swiper-brands', {
     },
   });
 
-  var swiper3 = new Swiper('.swiper_about_us_team_first', {
+  var swiper1 = new Swiper('.swiper_about_us_team_first', {
     loop: true,
     slidesPerView: 3,
     initialSlide: 1,
@@ -137,77 +137,87 @@ var swiper = new Swiper('.swiper-brands', {
     }
   });
 
-  var swiper3 = new Swiper('.swiper_about_us_team_masters', {
+  var swiper2 = new Swiper('.swiper_about_us_team_masters', {
     loop: true,
     slidesPerView: 5,
-    initialSlide: none,
     navigation: {
-      nextEl: '.swiper-button-next-member',
-      prevEl: '.swiper-button-prev-member',
+      nextEl: '.swiper-button-next-master',
+      prevEl: '.swiper-button-prev-master',
     }
   });
 
   var swiper3 = new Swiper('.swiper_service_service_slider_sop', {
     loop: true,
     slidesPerView: 5,
-    initialSlide: none,
     navigation: {
-      nextEl: '.swiper-button-next-member',
-      prevEl: '.swiper-button-prev-member',
-    }
-  });
-  var swiper3 = new Swiper('.swiper_service_service_slider_sop2', {
-    loop: true,
-    slidesPerView: 5,
-    initialSlide: none,
-    navigation: {
-      nextEl: '.swiper-button-next-member',
-      prevEl: '.swiper-button-prev-member',
+      nextEl: '.swiper-button-next-products',
+      prevEl: '.swiper-button-prev-products',
     }
   });
 
-  var swiper3 = new Swiper('.swiper_team_team_swiper_owners', {
+  var swiper4 = new Swiper('.swiper_service_service_slider_sop2', {
     loop: true,
     slidesPerView: 5,
-    initialSlide: none,
     navigation: {
-      nextEl: '.swiper-button-next-member',
-      prevEl: '.swiper-button-prev-member',
+      nextEl: '.swiper-button-next-services',
+      prevEl: '.swiper-button-prev-services',
     }
   });
-  var swiper3 = new Swiper('.swiper_team_team_swiper_sles', {
+
+  var swiper5 = new Swiper('.swiper_member_slider_masters', {
     loop: true,
     slidesPerView: 5,
-    initialSlide: none,
     navigation: {
       nextEl: '.swiper-button-next-member',
-      prevEl: '.swiper-button-prev-member',
+      prevEl: '.swiper-button-next-member',
     }
   });
-  var swiper3 = new Swiper('.swiper_team_team_swiper_kuz', {
+
+  var swiper6 = new Swiper('.swiper_team_team_swiper_owners', {
     loop: true,
     slidesPerView: 5,
-    initialSlide: none,
+
     navigation: {
-      nextEl: '.swiper-button-next-member',
-      prevEl: '.swiper-button-prev-member',
+      nextEl: '.swiper_team_team_swiper_owners-next',
+      prevEl: '.swiper_team_team_swiper_owners-prev',
     }
   });
-  var swiper3 = new Swiper('.swiper_team_team_swiper_prz', {
+
+  var swiper7 = new Swiper('.swiper_team_team_swiper_sles', {
     loop: true,
     slidesPerView: 5,
-    initialSlide: none,
+
     navigation: {
-      nextEl: '.swiper-button-next-member',
-      prevEl: '.swiper-button-prev-member',
+      nextEl: '.swiper_team_team_swiper_sles-next',
+      prevEl: '.swiper_team_team_swiper_sles-prev',
     }
   });
-  var swiper3 = new Swiper('.swiper_team_team_swiper_zip', {
+
+  var swiper8 = new Swiper('.swiper_team_team_swiper_kuz', {
     loop: true,
     slidesPerView: 5,
-    initialSlide: none,
+
     navigation: {
-      nextEl: '.swiper-button-next-member',
-      prevEl: '.swiper-button-prev-member',
+      nextEl: '.swiper_team_team_swiper_kuz-next',
+      prevEl: '.swiper_team_team_swiper_kuz-prev',
+    }
+  });
+
+  var swiper9 = new Swiper('.swiper_team_team_swiper_prz', {
+    loop: true,
+    slidesPerView: 5,
+
+    navigation: {
+      nextEl: '.swiper_team_team_swiper_prz-next',
+      prevEl: '.swiper_team_team_swiper_prz-prev',
+    }
+  });
+
+  var swiper10 = new Swiper('.swiper_team_team_swiper_zip', {
+    loop: true,
+    slidesPerView: 5,
+    navigation: {
+      nextEl: '.swiper_team_team_swiper_zip-next',
+      prevEl: '.swiper_team_team_swiper_zip-prev',
     }
   });
