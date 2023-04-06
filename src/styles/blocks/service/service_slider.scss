@@ -40,11 +40,9 @@ padding: 0 1.125rem;
 .service_slider_item {
     background: #fff;
     min-height: 410px;
-    max-width: 18%;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
     border-radius: 10px;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    margin: 20px 1%;
+    
 }
 
 
@@ -72,6 +70,11 @@ color: #3442C1;
 .swiper-slide-content {
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
     padding: 0 1.625rem;
+}
+.swiper-slide-content-mob {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
+    text-align: left;
+    height: auto;
 }
 .button-service-slider::after {
     content: url("../img/service_page/arrov.svg");
@@ -101,8 +104,12 @@ color: #3442C1;
 
 @media ( min-width: 320px) and (max-width: 800px) {
     .service_slider_item {
-        width: 80% !important;
         transform: none;
+        min-height: auto;
+        margin: 10px 1% !important;
+    }
+    .swiper-slide-content-mob {
+        padding: 0 5px;
     }
     .swiper-slide-img-wrapper {
         width: 100%;
@@ -116,5 +123,12 @@ color: #3442C1;
     .swiper-button-prev-products::after {
         display: none;
     }
-   
+    .button-service-slider::after {
+        display: none;
+    }
+    .swiper-slide-img-wrapper {
+        img {
+            width: 100%;
+        }
+    }
  }

@@ -129,8 +129,23 @@ var swiper = new Swiper('.swiper-brands', {
 
   var swiper1 = new Swiper('.swiper_about_us_team_first', {
     loop: true,
-    slidesPerView: 3,
-    initialSlide: 1,
+    centeredSlides: true,
+    slidesPerView: 5,
+    initialSlide: 5,
+    breakpoints: {
+   320: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+   800: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+    1000: {
+     slidesPerView: 5,
+     spaceBetween: 0,
+   },
+ },
     navigation: {
       nextEl: '.swiper-button-next-member',
       prevEl: '.swiper-button-prev-member',
@@ -139,7 +154,23 @@ var swiper = new Swiper('.swiper-brands', {
 
   var swiper2 = new Swiper('.swiper_about_us_team_masters', {
     loop: true,
+    centeredSlides: true,
     slidesPerView: 5,
+    initialSlide: 5,
+    breakpoints: {
+   320: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+   800: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+    1000: {
+     slidesPerView: 5,
+     spaceBetween: 0,
+   },
+ },
     navigation: {
       nextEl: '.swiper-button-next-master',
       prevEl: '.swiper-button-prev-master',
@@ -148,16 +179,48 @@ var swiper = new Swiper('.swiper-brands', {
 
   var swiper3 = new Swiper('.swiper_service_service_slider_sop', {
     loop: true,
+    centeredSlides: true,
     slidesPerView: 5,
-    navigation: {
-      nextEl: '.swiper-button-next-products',
-      prevEl: '.swiper-button-prev-products',
-    }
+    initialSlide: 5,
+    breakpoints: {
+   320: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+   800: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+    1000: {
+     slidesPerView: 5,
+     spaceBetween: 0,
+   },
+ },
+ navigation: {
+  nextEl: '.swiper-button-next-products',
+  prevEl: '.swiper-button-prev-products',
+}
   });
 
   var swiper4 = new Swiper('.swiper_service_service_slider_sop2', {
     loop: true,
+    centeredSlides: true,
     slidesPerView: 5,
+    initialSlide: 5,
+    breakpoints: {
+   320: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+   800: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+    1000: {
+     slidesPerView: 5,
+     spaceBetween: 0,
+   },
+ },
     navigation: {
       nextEl: '.swiper-button-next-services',
       prevEl: '.swiper-button-prev-services',
@@ -166,7 +229,23 @@ var swiper = new Swiper('.swiper-brands', {
 
   var swiper5 = new Swiper('.swiper_member_slider_masters', {
     loop: true,
+    centeredSlides: true,
     slidesPerView: 5,
+    initialSlide: 5,
+    breakpoints: {
+   320: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+   800: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+    1000: {
+     slidesPerView: 5,
+     spaceBetween: 0,
+   },
+ },
     navigation: {
       nextEl: '.swiper-button-next-member',
       prevEl: '.swiper-button-next-member',
@@ -175,7 +254,23 @@ var swiper = new Swiper('.swiper-brands', {
 
   var swiper6 = new Swiper('.swiper_team_team_swiper_owners', {
     loop: true,
+    centeredSlides: true,
     slidesPerView: 5,
+    initialSlide: 5,
+    breakpoints: {
+   320: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+   800: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+    1000: {
+     slidesPerView: 5,
+     spaceBetween: 0,
+   },
+ },
 
     navigation: {
       nextEl: '.swiper_team_team_swiper_owners-next',
@@ -185,7 +280,23 @@ var swiper = new Swiper('.swiper-brands', {
 
   var swiper7 = new Swiper('.swiper_team_team_swiper_sles', {
     loop: true,
+    centeredSlides: true,
     slidesPerView: 5,
+    initialSlide: 5,
+    breakpoints: {
+   320: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+   800: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+    1000: {
+     slidesPerView: 5,
+     spaceBetween: 0,
+   },
+ },
 
     navigation: {
       nextEl: '.swiper_team_team_swiper_sles-next',
@@ -195,7 +306,23 @@ var swiper = new Swiper('.swiper-brands', {
 
   var swiper8 = new Swiper('.swiper_team_team_swiper_kuz', {
     loop: true,
+    centeredSlides: true,
     slidesPerView: 5,
+    initialSlide: 5,
+    breakpoints: {
+   320: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+   800: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+    1000: {
+     slidesPerView: 5,
+     spaceBetween: 0,
+   },
+ },
 
     navigation: {
       nextEl: '.swiper_team_team_swiper_kuz-next',
@@ -205,7 +332,23 @@ var swiper = new Swiper('.swiper-brands', {
 
   var swiper9 = new Swiper('.swiper_team_team_swiper_prz', {
     loop: true,
+    centeredSlides: true,
     slidesPerView: 5,
+    initialSlide: 5,
+    breakpoints: {
+   320: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+   800: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+    1000: {
+     slidesPerView: 5,
+     spaceBetween: 0,
+   },
+ },
 
     navigation: {
       nextEl: '.swiper_team_team_swiper_prz-next',
@@ -215,7 +358,23 @@ var swiper = new Swiper('.swiper-brands', {
 
   var swiper10 = new Swiper('.swiper_team_team_swiper_zip', {
     loop: true,
+    centeredSlides: true,
     slidesPerView: 5,
+    initialSlide: 5,
+    breakpoints: {
+   320: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+   800: {
+     slidesPerView: 3,
+     spaceBetween: 0,
+   },
+    1000: {
+     slidesPerView: 5,
+     spaceBetween: 0,
+   },
+ },
     navigation: {
       nextEl: '.swiper_team_team_swiper_zip-next',
       prevEl: '.swiper_team_team_swiper_zip-prev',

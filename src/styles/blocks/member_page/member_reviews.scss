@@ -91,3 +91,10 @@ color: #848484 !important;
         display: none;
     }
  }
+ @media ( min-width: 800px) and (max-width: 1250px) {
+    .member_reviews_slider_item {
+        width: 400px !important;
+        margin-top: 100px;
+    }
+    
+ }

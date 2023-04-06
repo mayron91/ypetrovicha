@@ -40,11 +40,12 @@
 
 
 .member_slider_item {
-    width: 18% !important;
-    margin: 0 1%;
-    min-height: 410px;
+    width: 100%;
+    
+    min-height: auto;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
     border-radius: 0 0 10px 10px;
+    z-index: 1;
 }
 .member_slider_item_wrapper {
     width: 100%;
@@ -53,13 +54,13 @@
     img {
         width: 100%;
     }
-  
+    z-index: 2;
 }
 .member_slider_item_wrapper::before {
     content: '';
-z-index: 10;
+z-index: 3;
 width: 100%;
-height: 95%;
+height: auto;
 display: block;
 position: absolute;
 background: linear-gradient(0deg, rgba(225, 225, 225, 0.9) 2%, rgba(0, 0, 0, 0) 60%);
@@ -162,13 +163,10 @@ line-height: 19px;
 /*mobile*/
 @media ( min-width: 320px) and (max-width: 1250px) {
     .member_slider_item {
-        width: 40% !important;
-        padding: 0 10px !important;
         transform: none;
+        margin: 0 1%;
     }
-    .button-member-slider::after {
-        display: none;
-    }
+    
     .member_swiper_substrate {
         display: none;
     }
@@ -188,5 +186,13 @@ color: #000000;
     }
     .about_us_team_button {
         width: 100%;
+    }
+    .rating-area:not(:checked) > label {
+        width: 18px;
+    }
+ }
+ @media ( min-width: 320px) and (max-width: 800px) {
+    .button-member-slider::after {
+        display: none;
     }
  }
