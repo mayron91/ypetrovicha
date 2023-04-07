@@ -33,8 +33,8 @@ var swiper = new Swiper('.swiper-brands', {
     breakpoints: {
    320: {
      slidesPerView: 3,
-     spaceBetween: 17,
-     initialSlide: 1,
+     spaceBetween: 12,
+     initialSlide: 3,
    },
    800: {
      slidesPerView: 3,
@@ -84,12 +84,16 @@ var swiper = new Swiper('.swiper-brands', {
     initialSlide: 0,
     breakpoints: {
    320: {
-     slidesPerView: 1,
-     spaceBetween: 25,
+     slidesPerView: 3,
+     spaceBetween: 0,
+     initialSlide: 0,
+     initialSlide: 1
    },
    800: {
      slidesPerView: 3,
-     spaceBetween: 50,
+     spaceBetween: 0,
+     initialSlide: 0,
+     initialSlide: 1,
    },
     1000: {
      slidesPerView: 3,
@@ -109,12 +113,16 @@ var swiper = new Swiper('.swiper-brands', {
     initialSlide: 0,
     breakpoints: {
    320: {
+     loop: false,
      slidesPerView: 3,
-     spaceBetween: 5,
+     spaceBetween: 0,
+     initialSlide: 1
    },
    800: {
+     loop: false,
      slidesPerView: 3,
-     spaceBetween: 50,
+     spaceBetween: 0,
+     initialSlide: 1
    },
     1000: {
      slidesPerView: 3,
@@ -134,12 +142,16 @@ var swiper = new Swiper('.swiper-brands', {
     initialSlide: 5,
     breakpoints: {
    320: {
+         loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
    800: {
+         loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
     1000: {
      slidesPerView: 5,
@@ -159,12 +171,16 @@ var swiper = new Swiper('.swiper-brands', {
     initialSlide: 5,
     breakpoints: {
    320: {
+         loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
    800: {
+         loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
     1000: {
      slidesPerView: 5,
@@ -184,12 +200,16 @@ var swiper = new Swiper('.swiper-brands', {
     initialSlide: 5,
     breakpoints: {
    320: {
+    loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
    800: {
+     loop: false,
      slidesPerView: 3,
-     spaceBetween: 0,
+     spaceBetween: 80,
+     initialSlide: 1
    },
     1000: {
      slidesPerView: 5,
@@ -209,12 +229,16 @@ var swiper = new Swiper('.swiper-brands', {
     initialSlide: 5,
     breakpoints: {
    320: {
+         loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
    800: {
+         loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
     1000: {
      slidesPerView: 5,
@@ -234,12 +258,16 @@ var swiper = new Swiper('.swiper-brands', {
     initialSlide: 5,
     breakpoints: {
    320: {
+         loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
    800: {
+         loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
     1000: {
      slidesPerView: 5,
@@ -256,19 +284,23 @@ var swiper = new Swiper('.swiper-brands', {
     loop: true,
     centeredSlides: true,
     slidesPerView: 5,
-    initialSlide: 5,
+    initialSlide: 3,
     breakpoints: {
    320: {
+    loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
    800: {
+    loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
     1000: {
      slidesPerView: 5,
-     spaceBetween: 0,
+     spaceBetween: 5,
    },
  },
 
@@ -285,12 +317,16 @@ var swiper = new Swiper('.swiper-brands', {
     initialSlide: 5,
     breakpoints: {
    320: {
+         loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
    800: {
+         loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
     1000: {
      slidesPerView: 5,
@@ -311,12 +347,16 @@ var swiper = new Swiper('.swiper-brands', {
     initialSlide: 5,
     breakpoints: {
    320: {
+         loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
    800: {
+         loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
     1000: {
      slidesPerView: 5,
@@ -337,12 +377,16 @@ var swiper = new Swiper('.swiper-brands', {
     initialSlide: 5,
     breakpoints: {
    320: {
+         loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
    800: {
+         loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
     1000: {
      slidesPerView: 5,
@@ -363,12 +407,16 @@ var swiper = new Swiper('.swiper-brands', {
     initialSlide: 5,
     breakpoints: {
    320: {
+         loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
    800: {
+         loop: false,
      slidesPerView: 3,
      spaceBetween: 0,
+     initialSlide: 1
    },
     1000: {
      slidesPerView: 5,
