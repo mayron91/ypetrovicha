@@ -217,6 +217,11 @@ line-height: 29px;
                 width: 100%;
             }
     }
+    .feedback_block_form_news_page {
+        p {
+            margin: 10px 0 0 0;
+        }
+    }
     .news_item_content_wrapper {
         flex-direction: column-reverse;
     }

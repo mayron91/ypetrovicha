@@ -84,15 +84,13 @@ var swiper = new Swiper('.swiper-brands', {
     initialSlide: 0,
     breakpoints: {
    320: {
-     slidesPerView: 3,
-     spaceBetween: 0,
+     slidesPerView: 1,
+     spaceBetween: 20,
      initialSlide: 0,
-     initialSlide: 1
    },
    800: {
      slidesPerView: 3,
      spaceBetween: 0,
-     initialSlide: 0,
      initialSlide: 1,
    },
     1000: {
