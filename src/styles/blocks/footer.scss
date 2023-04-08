@@ -47,12 +47,18 @@ line-height: 16px;
     flex-direction: row;
     align-items: center;
     margin: 10px 0;
+    p {
+        margin:0px;
+    }
 }
 .footer_watch {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 10px 0;
+    p {
+        margin:0px;
+    }
 }
 .footer_icon {
     color: #fff;
