@@ -30,7 +30,30 @@
                     </ul>
                     <div class="header_contacts">
                         <a href="tel:{{ vars.phone | toTel }}" class="phone">{{ vars.phone }}</a>
-                        <a href="#" class="header__nav__btn">Обратный звонок</a>
+                        
+                            <div class="popup-link">
+                                <a href="#popup1" class="header__nav__btn">Обратный звонок</a>
+                                </div>
+                                <div id="popup1" class="popup-container">
+                                    <div class="popup-content">
+                                      <a href="#" class="close">&times;</a>
+                                      <div class="popup_wrapper">
+                                        <form name="enroll" class="" method="post" action="">
+                                         <h3>Закажите обратный звонок</h3>
+                                         <p>Ваш контактный телефон<br>
+                                         <input class="master_input_form" type="text" value="+7(9__)___-__-__">
+                                        </p>
+                                        
+                                        <div class="checkbox">
+                                         <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
+                                         <label for="color-1">Политика конфиденциальности</label>
+                                       </div>             
+                                       <input class="pointer master_input_btn" type="submit" value="Обратный звонок">
+                                       
+                                     </form>
+                             </div>
+                                    </div>
+                                  </div>
                         </div>
             </div>
         </div>
