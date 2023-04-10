@@ -101,7 +101,30 @@
                     </ul>
                     <div class="header_contacts">
                         <a href="tel:{{ vars.phone | toTel }}" class="phone">{{ vars.phone }}</a>
-                        <a href="#" class="header__nav__btn black">Обратный звонок</a>
+                        
+                        <div class="popup-link">
+                            <a href="#popup1" class="header__nav__btn header__nav__btn black">Обратный звонок</a>
+                            </div>
+                            <div id="popup1" class="popup-container">
+                                <div class="popup-content">
+                                  <a href="#" class="close">&times;</a>
+                                  <div class="popup_wrapper">
+                                    <form name="enroll" class="" method="post" action="">
+                                     <h3 class="black_color">Закажите обратный звонок</h3>
+                                     <p class="black_color">Ваш контактный телефон<br>
+                                     <input class="master_input_form" type="text" value="+7(9__)___-__-__">
+                                    </p>
+                                    
+                                    <div class="checkbox">
+                                     <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
+                                     <label for="color-1">Политика конфиденциальности</label>
+                                   </div>             
+                                   <input class="pointer master_input_btn" type="submit" value="Обратный звонок">
+                                   
+                                 </form>
+                                </div>
+                                </div>
+                        </div>
                         </div>
             </div>
         </div>
@@ -134,7 +157,30 @@
                         </div></address>
                         <div class="header_item_mob header__time white_text">Пн-Пт: 08:00 - 19:00, </br>Сб: 08:00 - 17:00, Вс: выходной</div>
                         <div class="header_item_mob header__mail white_text"><a href="tel:" class="mail">{{ vars.email }}</a></div>
-                        <a href="#" class="mob_menu_btn black">Обратный звонок</a>
+                        
+                        <div class="popup-link">
+                            <a href="#popup2" class="header__nav__btn mob_menu_btn black">Обратный звонок</a>
+                            </div>
+                            <div id="popup2" class="popup-container">
+                                <div class="popup-content">
+                                  <a href="#" class="close">&times;</a>
+                                  <div class="popup_wrapper">
+                                    <form name="enroll" class="popup_wrapper_form" method="post" action="">
+                                     <h3 class="black_color">Закажите обратный звонок</h3>
+                                     <p class="black_color">Ваш контактный телефон<br>
+                                     <input class="master_input_form" type="text" value="+7(9__)___-__-__">
+                                    </p>
+                                    
+                                    <div class="checkbox">
+                                     <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
+                                     <label for="color-1">Политика конфиденциальности</label>
+                                   </div>             
+                                   <input class="pointer master_input_btn" type="submit" value="Обратный звонок">
+                                   
+                                 </form>
+                                </div>
+                                </div>
+                        </div>
                     </ul>
                     </div>
                   </nav>

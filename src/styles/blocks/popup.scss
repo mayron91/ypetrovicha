@@ -31,7 +31,7 @@
       align-items: center;
   }
   .popup-content {
-      
+    z-index: 999;
       width: 50%;
       max-width: 450px;
     margin: 20px auto;
@@ -69,13 +69,29 @@ position: relative;
   }
   
   .popup-container:target{
-    visibility: visible;
-    opacity: 1;
+    visibility: visible !important;
+    opacity: 1 !important;
     transform: scale(1);
+    z-index: 500;
   }
+ 
   
   .popup-container h3{
     margin:10px;
   }
   /*End popup styles*/
- 
+ .black_color {
+  color: #000 !important;
+ }
+ @media (min-width: 320px) and (max-width: 1225px) {
+  .popup-content {
+    width: 90%;
+  }
+
+  .master_input_form,
+  .master_input_btn {
+    opacity: 1 !important;
+    width: 100% !important;
+    position: relative !important;
+  }
+ }
