@@ -347,7 +347,7 @@ border-radius: 4px;
 #menu
 {
   position: absolute;
-  width: 75%;
+  width: 70%;
   height: auto;
   margin: -100px 0 0 -50px;
   padding-top: 125px;
@@ -374,13 +374,14 @@ line-height: 19px;
 #menu li
 {
   padding: 10px 0;
-  font-size: 22px;
-  
+  font-size: 16PX;
+  line-height: 24PX;
 }
 #menu li:active, li:hover {
     list-style-type: disc;
     color: #003D9E;
 }
+
 /*
  * slide it in
  */
@@ -399,7 +400,7 @@ line-height: 19px;
     display: inline-flex;
     font-size: 0.75rem;
     width: 90%;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 .mob_menu_btn {
     display: flex;
@@ -409,12 +410,12 @@ line-height: 19px;
     border: 1px solid #35393F;
     border-radius: 3px;
     background-color: #fff;
-    width: 80%;
-    height: 30px;
+    width: 95%;
+    height: 40px;
     text-align: center;
-    padding: 8px 20px;
+    padding: 8px 10px;
     font-size: 14px;
-    margin: 20px auto;
+    margin: 20px auto 0 -15px;
 }
 .stickymob{
     position: fixed;
