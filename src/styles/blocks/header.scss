@@ -4,6 +4,7 @@
     justify-content: space-between;
     gap: 20px;
 }
+
 .header_logo {
     margin: 0.625rem 0 0 0;
 }
@@ -12,9 +13,12 @@
     margin-top: 10px;
 }
 .header_item {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-size: 0.75rem;
     margin: 0.625rem 0 0 2.5rem;
+
 }
 .header__flag::before {
     content: url("../img/flag.svg");
@@ -60,7 +64,7 @@
     }
 }
 
-.li_active {
+.active {
     outline: solid 1px #003D9E;
     border-radius: 4px;
 }

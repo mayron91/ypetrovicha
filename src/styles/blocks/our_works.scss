@@ -107,6 +107,15 @@ line-height: 19px;
  }
   
 
- .our_works .h2 {
-    font-size: 30px;
+ .our_works {
+    h2 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 61px;
+        color: #545454 !important;
+    }
+        
+
  }

@@ -17,7 +17,7 @@ color: #000000;
     
 }
 .who_are_we_text {
-    width: 100%;
+    width: 50%;
     margin: 0 40px 0 0;
     padding: 0 40px 0 0;
     p {
@@ -41,7 +41,7 @@ color: #000000;
     }
 }
 /*Mobile*/
-@media ( min-width: 320px) and (max-width: 800px) {
+@media ( min-width: 320px) and (max-width: 1200px) {
     .aboutus_who_are_we_wrapper {
         margin-top: 75px;
         h2 {
@@ -68,7 +68,7 @@ color: #000000;
     }
     .who_are_we_img {
         img {
-            max-height: 110px;
+            max-height: 330px;
         }
     }
  }
