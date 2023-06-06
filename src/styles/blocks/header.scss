@@ -4,7 +4,9 @@
     justify-content: space-between;
     gap: 20px;
 }
-
+.header_right {
+    display: flex;
+}
 .header_logo {
     margin: 0.625rem 0 0 0;
 }
