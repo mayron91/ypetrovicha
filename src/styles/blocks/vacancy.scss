@@ -148,3 +148,19 @@ padding: 0 0 30px 0;
         }
     }
  }
+ @media ( min-width:800px) and (max-width: 1200px) {
+    .vacancy_banner_wripper {
+        h1 {
+            
+            top: 0;
+        }
+    }
+    .vacancy_banner {
+        p {
+           bottom: 17%; 
+        }
+        input {
+            bottom: 5%;
+        }
+    }
+ }

@@ -54,6 +54,7 @@
         display: inline-flex;
         align-items: center;
         column-gap: 65px;
+       
     }
     li {
         font-size: 0.90rem;
@@ -64,12 +65,10 @@
         outline: solid 1px #003D9E;
         border-radius: 4px;
     }
+     
 }
 
-.active {
-    outline: solid 1px #003D9E;
-    border-radius: 4px;
-}
+
 
 .phone {
     font-size: 22px;
