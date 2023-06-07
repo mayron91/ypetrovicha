@@ -68,6 +68,10 @@ html, body {
 /*mobile*/
 
 @media ( min-width: 320px) and (max-width: 800px) {
+    h2 {
+        font-size: 20px !important;
+        line-height: 24px !important;
+        }
     .not_mob {
      display: none !important;
     }
@@ -75,7 +79,12 @@ html, body {
      display: block !important;
  }
  }
-
+ @media ( min-width: 800px) and (max-width: 1225px) {
+    h2 {
+        font-size: 30px !important;
+        line-height: 34px !important;
+        }
+ }
 @media ( min-width: 320px) and (max-width: 1225px) {
     .mid {
         display: block !important;
