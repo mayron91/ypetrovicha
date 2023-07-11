@@ -6,6 +6,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    img {
+        max-height: 610PX;
+    }
 }
 .member_card_img_input {
     min-width: 296px;

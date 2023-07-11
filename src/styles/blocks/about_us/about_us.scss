@@ -44,11 +44,11 @@ text-transform:uppercase;
         font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
-font-size: 64px;
+font-size: 64PX !important;
 line-height: 78px;
--webkit-text-stroke-width: 1.2px;
-   -webkit-text-stroke-color: #003D9E;
-   -webkit-text-fill-color: #FFFFFF;
+text-shadow: 0 0 5px #003D9E;
+-webkit-text-stroke-width: 1px;
+color: #FFFFFF;
    margin: 20px 0 !important;
    padding: 0 !important;
     }

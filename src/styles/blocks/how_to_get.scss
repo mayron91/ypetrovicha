@@ -48,11 +48,15 @@
 }
 
 .how_to_get_img {
-    
+    width: 100%;
+    border-radius: 0 10px 10px 0;
     img {
         width: 100%;
         object-fit: cover;
         min-height: 366px;
+    }
+    iframe {
+        border-radius: 0 10px 0 0;
     }
 }
 

@@ -79,6 +79,11 @@ padding: 0 10px;
     input {
         width: 100%;
         margin: 0;
+        color: #C8C8C8;
+    }
+    input::placeholder {
+        color: #C8C8C8;
+        opacity: 1;
     }
 }
 .enroll_select {
@@ -88,7 +93,7 @@ padding: 0 10px;
     align-items: flex-start;
     p {
         width: 100%;
-        margin: 20px 10px 0 10px;
+        margin: 20px 10px 20px 10px;
     }
     select {
         margin: 0;

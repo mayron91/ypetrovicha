@@ -67,7 +67,10 @@
     }
      
 }
-
+.active_nav {
+    outline: solid 1px #003D9E;
+        border-radius: 4px;
+}
 
 
 .phone {
@@ -386,6 +389,7 @@ line-height: 19px;
     list-style-type: disc;
     color: #003D9E;
 }
+
 
 /*
  * slide it in
