@@ -98,12 +98,12 @@ color: #D1D1D1;
     justify-content: space-between;
 }
 .clients_benefits__item {
-    flex-basis: 30%;
+    flex-basis: 32%;
     background: transparent;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
     border: 1px solid #6D7487;
     border-radius: 10px;
-    margin: 10px 20px;
+    margin: 1% 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -159,11 +159,11 @@ line-height: 21px;
         font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
-font-size: 64px;
+font-size: 64PX !important;
 line-height: 78px;
--webkit-text-stroke-width: 1.2px;
-   -webkit-text-stroke-color: #5B9DFF;
-   -webkit-text-fill-color: transparent;
+text-shadow: 0 0 5px #5B9DFF;
+-webkit-text-stroke-width: 1px;
+color: #101015;
    margin: 20px 0 !important;
    padding: 0 !important;
     }
@@ -239,7 +239,7 @@ font-weight: 600;
 font-size: 24px;
 line-height: 28px;
 color: #D1D1D1;
-padding: 0 0 40px 0;
+padding: 0 0 40px 20px;
     }
 }
 .contact_form_input_wrapper {
