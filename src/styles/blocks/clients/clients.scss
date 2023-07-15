@@ -300,7 +300,18 @@ margin-top: 40px;
     color: #fff;
 }
 /*mobile*/
-
+@media ( min-width: 320px) and (max-width: 800px) {
+    .clients_statistic_about_us_item_wapper {
+        h2 {
+    font-size: 32PX !important;
+       margin: 20px 0 !important;
+       padding: 0 !important;
+        }
+        span {
+            font-size: 24px;
+        }
+    }
+}
 
 @media ( min-width: 320px) and (max-width: 1225px) {
     .clients_catalog_banner_wripper {
@@ -410,15 +421,16 @@ border-radius: 4px;
 font-size: 16px;
 line-height: 19px;
 }
-.black_back {
-    background-color: transparent !important;
-    
-}
+
 .white_text {
     color: #fff !important;
     p {
         color: #fff !important;
     }
+}
+.black_back {
+    background-color: transparent !important;
+    
 }
  }
  @media ( min-width: 550px) and (max-width: 1225px) {
