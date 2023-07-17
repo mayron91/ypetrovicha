@@ -4,9 +4,7 @@ margin: 0 auto;
 padding: 0 40px;
 }
 
-.cont {
-    margin: 35px 0;
-}
+
 
 .wrapper {
     display: grid;
@@ -14,11 +12,9 @@ padding: 0 40px;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
 }
-
-.h2 {
-    margin-left: 30px;
+.cont {
+    margin-bottom: 40px;
 }
-
 .works_item {
     border-radius: 20px;
     position: relative;
