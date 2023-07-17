@@ -33,7 +33,10 @@ html, body {
         font-size: 60PX;
     }
 }
-
+h2 {
+    padding-bottom: 0 !important;
+    margin-bottom: 10px;
+}
 .site-wrapper {
     width: 100%;
     display: flex;

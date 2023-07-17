@@ -34,19 +34,17 @@ line-height: 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10px 0;
+    margin: 10px 0 0 0;
 }
 .footer_phone {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10px 0;
 }
 .footer_adress {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10px 0;
     p {
         margin:0px;
     }
@@ -55,7 +53,6 @@ line-height: 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10px 0;
     p {
         margin:0px;
     }
