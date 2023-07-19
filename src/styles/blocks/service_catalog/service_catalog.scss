@@ -47,7 +47,6 @@ font-size: 50px;
 line-height: 61px;
 color: #000000;
 padding: 0 40px;
-margin-top: 70px;
     }
 }
 .service_catalog_cards_wrapper {
@@ -66,7 +65,7 @@ border-radius: 10px;
 padding: 0 40px;
 display: flex;
 flex-direction: column;
-margin: 10px 1%;
+margin: 10px 0;
 h3 {
     font-family: 'Montserrat';
 font-style: normal;
@@ -109,7 +108,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 19px;
-margin: 40px 0;
+margin: 40px 0 0 0;
 color: #35393F;
 }
 .active_srv_ctl_more {
