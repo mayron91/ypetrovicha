@@ -54,8 +54,20 @@ padding: 0 40px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-height: 360px;
     overflow: hidden;
+}
+
+.invisible {
+    display: none;
+}
+.visible {
+    display: flex;
+}
+.invisible_ul1,.invisible_ul2, .invisible_ul3,.invisible_ul4,.invisible_ul5,.invisible_ul6 {
+    display: none;
+}
+.visible_ul {
+    display: block;
 }
 .service_catalog_card_item_wripper {
     width: 31%;
@@ -111,10 +123,7 @@ line-height: 19px;
 margin: 40px 0 0 0;
 color: #35393F;
 }
-.active_srv_ctl_more {
-    max-height: 100%;
-    margin-bottom: 20px;
-}
+
 /*mobile*/
 
 
