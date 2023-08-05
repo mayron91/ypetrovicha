@@ -207,6 +207,18 @@ margin: 0;
 
  @media (min-width: 1000px) {
     .member_slider_wrapper {
-        height: 450PX;
+        height: 415PX;
+    }
+  }
+
+  @media (min-width: 1500px) {
+    .member_slider_wrapper {
+        height: 430PX;
+    }
+  }
+
+  @media (min-width: 1800px) {
+    .member_slider_wrapper {
+        height: 485PX;
     }
   }

@@ -33,12 +33,13 @@ line-height: 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10px 0 0 0;
+    margin: 10px 0 15px 0;
 }
 .footer_phone {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 10px 0 15px 0;
 }
 .footer_adress {
     display: flex;
@@ -47,6 +48,7 @@ line-height: 16px;
     p {
         margin:0px;
     }
+    margin: 10px 0 15px 0;
 }
 .footer_watch {
     display: flex;
@@ -55,6 +57,7 @@ line-height: 16px;
     p {
         margin:0px;
     }
+    margin: 10px 0 15px 0;
 }
 .footer_icon {
     color: #fff;
