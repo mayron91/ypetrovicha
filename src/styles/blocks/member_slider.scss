@@ -204,4 +204,9 @@ margin: 0;
         width: 18px;
     }
  }
- 
+
+ @media (min-width: 1000px) {
+    .member_slider_wrapper {
+        height: 450PX;
+    }
+  }
